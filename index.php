@@ -19,7 +19,7 @@
 					</div>
 					
 					<div id="matchdayText">
-						<p>Paris ngnSaint Germain vs Celtic</p>
+						<p>Paris Saint Germain vs Celtic</p>
 						<p>UEFA Champions League</p>
 						<p>22nd November 2017</p>
 						<p>Kick-Off 19:45</p>
