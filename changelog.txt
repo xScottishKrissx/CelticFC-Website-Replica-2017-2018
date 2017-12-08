@@ -1,0 +1,27 @@
+8/12/12 Changelog:
+ ** == Known Issues / Planned 
+	**Added First Team Page
+	**Fixed Nav bug where leaving column header at wrong place
+	  will cancel hover.
+	**Added PHP functionality
+	
+	
+	
+	
+7/12/12 Changelog:
+ ** == Known Issues / Planned 
+	Added Ad Bar Image
+	Move Sponsors Along to correct position
+	Added Highlight on main nav when hovering
+	Added hyperlinks to nav headers
+	Reset anchor tags pagewide
+	Added Changelog
+	Spacing Issues in Celtic TV Column
+	Colour Corrections in Celtic TV Column
+	Font Correction in Celtic TV Column		
+	Spacing Issues in Club Column	
+		*Happy with it for now. Might come back later.
+	Spacing Issues in Tickets Column
+		*Happy with it for now. Might come back later.
+	**The Jquery has a lot of room for improvement. A loop or something else to avoid so much repeating code
+	
