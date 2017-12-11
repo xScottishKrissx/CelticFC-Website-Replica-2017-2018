@@ -222,10 +222,56 @@ nav{margin-bottom:6%;}
 /***************************************************************************/
 
 .firstTeamImagesSection{}
-	.goalkeepers{margin-left:22px;}
-	.goalkeepers{}
-	.defenders{}
-	.midfielders{}
-	.forwards{}
-	.loan{}
 
+	.goalkeepers{margin-left:10px;}
+
+	
+ 
+ .playerItem{
+	 width:32%; 
+	 float:left; 
+	 padding-left:10px;
+	 margin-top:30px;
+  }
+    
+	.playerItem img{width:100%;}
+	
+	.playerName{  
+		background-color:#000;
+		color:#FC0;
+		
+		font-family:BigNoodleTitling;
+		font-size:2em;
+		
+		line-height:1.2em;
+		
+		opacity:0.7;
+		
+	}
+		.playerName span{position:relative; left:5%;}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

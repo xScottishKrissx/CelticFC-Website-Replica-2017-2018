@@ -4,6 +4,8 @@
 		opcache.enable=0
 		opcache.enable_cli=0
 	.. in php.ini
+	
+	Added player images to the "Team" page
 
 8/12/12 Changelog:
  ** == Known Issues / Planned 
