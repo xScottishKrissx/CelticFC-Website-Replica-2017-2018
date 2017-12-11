@@ -1,3 +1,10 @@
+11/12/17 Changelog:
+ ** == Known Issues / Planned
+	Removed Caching from Website by changing...
+		opcache.enable=0
+		opcache.enable_cli=0
+	.. in php.ini
+
 8/12/12 Changelog:
  ** == Known Issues / Planned 
 	**Added First Team Page
