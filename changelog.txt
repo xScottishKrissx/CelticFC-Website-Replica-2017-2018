@@ -1,3 +1,15 @@
+** == Known Issues Planned
+ 	**Added Team Page Link to Nav sections where required
+	**Fixed Headers on First Team Page
+	** Added "On-Loan" section to first team page 
+	
+
+12/12/17 Changelog:
+	Functionality where clicking a players image will 
+	take you to the appropriate page without need for seperate php/html
+	files.
+
+
 11/12/17 Changelog:
  ** == Known Issues / Planned
 	Removed Caching from Website by changing...
@@ -9,10 +21,10 @@
 
 8/12/12 Changelog:
  ** == Known Issues / Planned 
-	**Added First Team Page
+	Added First Team Page
 	**Fixed Nav bug where leaving column header at wrong place
 	  will cancel hover.
-	**Added PHP functionality
+	Added PHP functionality
 	
 	
 	

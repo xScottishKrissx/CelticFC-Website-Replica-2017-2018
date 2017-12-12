@@ -15,8 +15,8 @@
 					<h2>GoalKeepers</h2>					
 					
 					<div class="playerItem">
-						<img src="img/playerImages/craigGordon.jpg" />
-						<div class="playerName"><span>1. C. Gordon</span></div>
+						<a href="playerprofile.php?1=one&2=two&3=three"><img src="img/playerImages/craigGordon.jpg" />
+						<div class="playerName"><span>1. C. Gordon</span></div></a>
 					</div>					
 					
 					<div class="playerItem">
@@ -188,7 +188,7 @@
 		
 	</div>
 	
-	<?php include ('column2.php')?>
+<?php include ('column2.php')?>
 
 
 <?php	include ('footer.php'); ?>	
