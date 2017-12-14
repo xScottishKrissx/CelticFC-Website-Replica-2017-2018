@@ -2,9 +2,12 @@
  	**Added Team Page Link to Nav sections where required
 	**Fixed Headers on First Team Page
 	** Added "On-Loan" section to first team page 
-
-13/12/17 Changelog
+14/12/17
+	Added the structure for when clicking on a players image in the team page
+	section takes you to a new page with the information on it.
 	
+	
+13/12/17 Changelog
 
 12/12/17 Changelog:
 	Functionality where clicking a players image will 
