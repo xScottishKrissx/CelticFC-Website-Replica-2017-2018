@@ -17,7 +17,7 @@
 	<div id="footer">
 		<img src="img/crest.png" />
 		<div class="footerColumn">
-			<ul>Home
+			<ul><a href="\celticPractice">Home</a>
 				<li>Celtic FC Foundation</li>
 				<li>Celtic FC Travel</li>
 				<li>Celtic TV</li>
@@ -28,8 +28,8 @@
 			</ul>
 		</div>
 		<div class="footerColumn">
-			<ul>Team
-				<li>First Team Players</li>
+			<ul><a href="team.php">Team</a>
+				<a href="team.php"><li>First Team Players</li></a>
 				<li>First Team Fixtures</li>
 				<li>SPFL Premiership Table</li>
 				<li>Development Squad</li>

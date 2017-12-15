@@ -23,7 +23,7 @@
 					<div class="rightMenu">
 						<div class="rightMenuSubColumn">
 							<h1>Players</h1>
-							<p>First Team</p>
+							<a href="team.php"><p>First Team</p></a>
 							<p>Development Squad</p>
 							<p>Women's First Team</p>
 						</div>

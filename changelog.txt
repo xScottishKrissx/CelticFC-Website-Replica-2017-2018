@@ -1,10 +1,33 @@
 ** == Known Issues Planned
- 	**Added Team Page Link to Nav sections where required
-	**Fixed Headers on First Team Page
-	** Added "On-Loan" section to first team page 
+	**Made a default news page template
+	**Cleaned up code to be less repetitive
+	**Prettify URLs
+    **Create Error page for Player profile page
+	**Added Team Page Link to Nav sections where required
+	**Seperated PlayerProfile PHP code from playerprofile.php
+	**Set the title of each page dynamically
+	**Added quick nav logos
+	**Fixed Nav bug where leaving column header at wrong place
+	  will cancel hover.
+	**Created First Team Fixtures and Results Page
+	**Created League Table Page
+	**Created News Index Page
+	**Created Tickets Page
+	**Created About Club Page
+	**Created Fans Page
+	**Created Shop Page
+	
+
+	
+15/12/17
+	-Adjusted player profile page to show full name
+	-Added more players to the player profile page
+	-Added "On-Loan" section to first team page
+ 	-Fixed Site Wide Footer and Sponsor Bug
+	-Fixed Headers on First Team Page
 14/12/17
-	Added the structure for when clicking on a players image in the team page
-	section takes you to a new page with the information on it.
+	-Added the structure for when clicking on a players image in the team page
+	section takes you to a new page with the information on it. 
 	
 	
 13/12/17 Changelog
@@ -27,8 +50,6 @@
 8/12/12 Changelog:
  ** == Known Issues / Planned 
 	Added First Team Page
-	**Fixed Nav bug where leaving column header at wrong place
-	  will cancel hover.
 	Added PHP functionality
 	
 	

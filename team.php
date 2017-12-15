@@ -8,25 +8,28 @@
 				
 				<h1>First Team</h1>
 				
-				
+				<!-- 
+					There might be a bug later on where players whose id has a a number that's in another players
+					id might not work. The earliest this will come up is  10 and 11
+				-->
 				
 				
 				<div class="goalkeepers">
 					<h2>GoalKeepers</h2>					
 					
 					<div class="playerItem">
-						<a href="playerprofile.php?name=craig"><img src="img/playerImages/craigGordon.jpg" />
+						<a href="playerprofile.php?id=6"><img src="img/playerImages/craigGordon.jpg" />
 						<div class="playerName"><span>1. C. Gordon</span></div></a>
 					</div>					
 					
 					<div class="playerItem">
-						<a href="playerprofile.php?name=dorus"><img src="img/playerImages/devries.jpg" />
+						<a href="playerprofile.php?id=7"><img src="img/playerImages/devries.jpg" />
 						<div class="playerName"><span>24. D. De Vries</span></div></a>
 					</div>					
 					
 					<div class="playerItem">
-						<img src="img/playerImages/hazard.jpg" />
-						<div class="playerName"><span>65. C. Hazard</span></div>
+						<a href="playerprofile.php?id=8"><img src="img/playerImages/hazard.jpg" />
+						<div class="playerName"><span>65. C. Hazard</span></div></a>
 					</div>
 				</div>
 				
@@ -34,18 +37,18 @@
 					<h2>Defenders</h2>					
 					
 					<div class="playerItem">
-						<img src="img/playerImages/simunovic.jpg" />
-						<div class="playerName"><span>5. J. Simunovic</span></div>
+						<a href="playerprofile.php?id=9"><img src="img/playerImages/simunovic.jpg" />
+						<div class="playerName"><span>5. J. Simunovic</span></div></a>
 					</div>					
 					
 					<div class="playerItem">
-						<img src="img/playerImages/gamboa.jpg" />
-						<div class="playerName"><span>12. C. Gamboa</span></div>
+						<a href="playerprofile.php?id=10"><img src="img/playerImages/gamboa.jpg" />
+						<div class="playerName"><span>12. C. Gamboa</span></div></a>
 					</div>					
 					
 					<div class="playerItem">
-						<img src="img/playerImages/boyata.jpg" />
-						<div class="playerName"><span>20. D. Boyata</span></div>
+						<a href="playerprofile.php?id=11"><img src="img/playerImages/boyata.jpg" />
+						<div class="playerName"><span>20. D. Boyata</span></div></a>
 					</div>					
 					
 					<div class="playerItem">
@@ -80,7 +83,7 @@
 				</div>
 				
 				<div class="midfielders">					
-					
+					<h2>Midfielders</h2>	
 					<div class="playerItem">
 						<img src="img/playerImages/bitton.jpg" />
 						<div class="playerName"><span>6. N. Bitton</span></div>
@@ -148,7 +151,7 @@
 				</div>
 				
 				<div class="forwards">						
-					
+					<h2>Forwards</h2>	
 					<div class="playerItem">
 						<img src="img/playerImages/griffiths.jpg" />
 						<div class="playerName"><span>9. L. Griffiths</span></div>
@@ -166,7 +169,7 @@
 				</div>
 				
 				<div class="loan">						
-					
+					<h2>On-Loan</h2>	
 					<div class="playerItem">
 						<img src="img/playerImages/christie.jpg" />
 						<div class="playerName"><span>17. R. Christie</span></div>

@@ -2,14 +2,17 @@
 
 
 <?php 
-    $player = $_GET["name"];
+    $player = $_GET["id"];
 
 	/*OMFG this works.... Thank god I cant believe it */
-	$result = $db->prepare("select * from stats where name LIKE :player");
-	$result->bindParam(':player', $_GET['name']);	
+	$result = $db->prepare("select * from stats where id LIKE :player");
+	$player = "%" . $player . "%";
+	$result->bindParam(':player', $player);	
 	$result->execute();
 	
 	while ($row = $result->fetch(PDO::FETCH_ASSOC)){
+		
+		$pagetitle = $row['name'];
 		
 		$squad_num = $row['squad_num'];
 		$name = $row['name'];
@@ -23,7 +26,7 @@
 		$nationality  = $row['nationality'];
 		$caps  = $row['caps'];
 		$imagepath  = $row['imagepath'];
-	}
+	};
 	
 	
 	?>
