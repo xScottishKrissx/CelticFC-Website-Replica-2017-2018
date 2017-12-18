@@ -1,9 +1,11 @@
 ** == Known Issues Planned
-	**Made a default news page template
+
+	**Made a standard news page template
+	**Made a most read column for news pages
+	**Paginate News Index Page
 	**Cleaned up code to be less repetitive
 	**Prettify URLs
     **Create Error page for Player profile page
-	**Added Team Page Link to Nav sections where required
 	**Seperated PlayerProfile PHP code from playerprofile.php
 	**Set the title of each page dynamically
 	**Added quick nav logos
@@ -16,8 +18,11 @@
 	**Created About Club Page
 	**Created Fans Page
 	**Created Shop Page
+	**Fixed Loan section sticking to footer on team profile page
 	
-
+18/12/17
+	-Made Celtic FC on nav a link
+	-Made a default news index template
 	
 15/12/17
 	-Adjusted player profile page to show full name
@@ -25,6 +30,7 @@
 	-Added "On-Loan" section to first team page
  	-Fixed Site Wide Footer and Sponsor Bug
 	-Fixed Headers on First Team Page
+	-Added Team Page Link to Nav sections where required
 14/12/17
 	-Added the structure for when clicking on a players image in the team page
 	section takes you to a new page with the information on it. 

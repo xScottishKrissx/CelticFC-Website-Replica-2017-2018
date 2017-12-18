@@ -3,8 +3,7 @@
 
 <?php 
     $player = $_GET["id"];
-
-	/*OMFG this works.... Thank god I cant believe it */
+	
 	$result = $db->prepare("select * from stats where id LIKE :player");
 	$player = "%" . $player . "%";
 	$result->bindParam(':player', $player);	
@@ -29,7 +28,7 @@
 	};
 	
 	
-	?>
+?>
 
 <div class="playerProfilePageContent">
 	<img src="img/playerProfileImages/<?php echo $imagepath;  ?>" />

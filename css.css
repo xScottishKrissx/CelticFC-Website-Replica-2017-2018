@@ -241,6 +241,7 @@ nav{margin-bottom:6%;}
 
 	.goalkeepers{clear:both; margin-left:10px;}
 	.defenders, .midfielders, .forwards, .loan{clear:both; padding-top:50px;}
+		
 
 	
  
@@ -311,15 +312,27 @@ nav{margin-bottom:6%;}
 		
 		
 		
+/***************************************************************************/
+/************************* News Page ***************************************/
+/***************************************************************************/
 		
-		
-		
-		
-		
-		
-		
-		
-		
+.newsIndex{}		
+	.newsSearchBox{}		
+
+	.newsItem{
+		font-family:BigNoodleTitling;
+		font-size:1.8em;
+		display:flex;
+	}		
+		.newsIndexImage{}		
+		.newsIndexTitle{    
+			/* background-color: red; */
+			padding-right: 2.2em;
+			padding-left: 0.5em;
+		}
+		.newsIndexDate{
+			/* background-color:blue; */
+		}		
 		
 		
 		

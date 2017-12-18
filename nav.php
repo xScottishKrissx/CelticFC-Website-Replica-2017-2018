@@ -4,7 +4,7 @@
 			
 					<a href="index.php"><span>Home</span></a>
 					<a href="team.php"><span class="column1">Team</span></a> 
-					<a href="#"><span class="column2">News</span></a>  
+					<a href="standardnews.php"><span class="column2">News</span></a>  
 					<a href="#"><span class="column3">Tickets</span></a>  
 					<a href="#"><span class="column4">Celtic TV</span></a>  
 					<a href="#"><span class="column5">Club</span></a>  

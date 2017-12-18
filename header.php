@@ -34,7 +34,7 @@
 		<div class="titleBarContent">
 		  
 		  <img class="veryTopCelticLogo" src="img/crest.png" />
-		  <h1>Celtic FC</h1>
+		  <a href="index.php"><h1>Celtic FC</h1></a>
 			<div id="titleBarNav">  
 				<ul >
 					<li><img id="nbLogoTitle" src="img/nb.png" /></li>
