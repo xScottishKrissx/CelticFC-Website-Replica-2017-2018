@@ -63,11 +63,17 @@ $(document).ready(function() {
 		   $(".column7").css("border-bottom","0px solid #ffcc00")
   });
   
-
+/* Paging */
+if($ (".pagingLinkDisabled") .length){
+	$(".pagingLinkDisabled").css("color","#bbb");
+}
   
   
   console.log("Hello");
 });
+
+
+
 
 $(window).resize(function(){
 	$("#column2").css("height", $("#column1").height());

@@ -193,7 +193,7 @@ nav{margin-bottom:6%;}
     padding-top: 10px;
 }
 
-#secondaryAdBar img{padding-right:10px;}
+#secondaryAdBar img{padding-right:10px; clear:both;}
 
 /* Footer */
 #footer{	
@@ -333,6 +333,33 @@ nav{margin-bottom:6%;}
 		.newsIndexDate{
 			/* background-color:blue; */
 		}		
+	
+	/**Paging */
+	#paging{
+		clear:both;
+		float:right;
+		font-family:BigNoodleTitling;
+		font-size:1.5em;
+		padding-bottom:10px;
+	}
+		
+	.newsIndexItemLink:hover .newsItem{
+		background-color:#00984f;
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

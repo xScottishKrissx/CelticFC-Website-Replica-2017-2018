@@ -2,7 +2,6 @@
 
 	**Made a standard news page template
 	**Made a most read column for news pages
-	**Paginate News Index Page
 	**Cleaned up code to be less repetitive
 	**Prettify URLs
     **Create Error page for Player profile page
@@ -19,6 +18,12 @@
 	**Created Fans Page
 	**Created Shop Page
 	**Fixed Loan section sticking to footer on team profile page
+
+	
+	
+19/12/17
+	--Paginated News Index Page
+	
 	
 18/12/17
 	-Made Celtic FC on nav a link
