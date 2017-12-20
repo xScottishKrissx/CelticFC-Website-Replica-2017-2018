@@ -20,6 +20,8 @@
 	**Fixed Loan section sticking to footer on team profile page
 
 	
+20/12/17
+	-Solved issue of page not updating with database
 	
 19/12/17
 	--Paginated News Index Page

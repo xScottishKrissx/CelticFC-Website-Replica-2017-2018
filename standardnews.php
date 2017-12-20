@@ -7,13 +7,8 @@
 		<?php
 
 		try{
-			$row=array(); 		
-			$stmt = null;
-		
-		$row = null;
-		$iterator = null;
 		// Find out how many items are in the table
-		$total = $db->query('SELECT  COUNT(*) FROM indexitems') -> fetchColumn();
+		$total = $db->query('SELECT  COUNT(*) FROM newsindexitems') -> fetchColumn();
 		
 		// How many items to list per page
 		$limit = 10;
@@ -37,7 +32,7 @@
 		$end = min(($offset + $limit), $total);		
 		
 		// Prepare the paged query
-		$stmt = $db->prepare('SELECT * FROM indexitems ORDER BY id DESC LIMIT :limit OFFSET :offset');
+		$stmt = $db->prepare('SELECT * FROM newsindexitems ORDER BY id DESC LIMIT :limit OFFSET :offset');
 		 // Bind the query params
 		$stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
 		$stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
@@ -60,11 +55,7 @@
 			}
 		}else{
 			echo '<p>No Results could be displayed.</p>';
-		}
-
-
-		
-		
+		}		
 		// The "back" link
 		$prevlink = ($page > 1) ? '<a href="?page=' . ($page - 1) . '" title="Previous page">Prev</a>' : '<span class="pagingLinkDisabled">Prev</span>';
 		

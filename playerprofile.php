@@ -4,7 +4,7 @@
 <?php 
     $player = $_GET["id"];
 	
-	$result = $db->prepare("select * from stats where id LIKE :player");
+	$result = $db->prepare("select * from playerstats where id LIKE :player");
 	$player = "%" . $player . "%";
 	$result->bindParam(':player', $player);	
 	$result->execute();
