@@ -47,7 +47,7 @@
 			foreach($iterator as $row){
 				echo "<a class='newsIndexItemLink' href='standardnewsPage.php?title=" . $row['title'] . " '> ";
 				echo "<div class='newsItem'>";
-				echo "<div class='newsIndexImage'><img src='img/newsIndexImages/" .$row['image'] . "' /></div>";
+				echo "<div class='newsIndexImage'><img src='img/news/" .$row['image'] . "' /></div>";
 				echo "<div class='newsIndexTitle'>" . $row['title'] . "</div>";
 				echo "<div class='newsIndexDate'>" . $row['date'] . "</div>";
 				echo "</div>";

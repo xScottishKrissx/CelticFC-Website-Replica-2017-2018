@@ -1,6 +1,4 @@
 ** == Known Issues Planned
-
-	**Made a standard news page template
 	**Made a most read column for news pages
 	**Cleaned up code to be less repetitive
 	**Prettify URLs
@@ -12,13 +10,16 @@
 	  will cancel hover.
 	**Created First Team Fixtures and Results Page
 	**Created League Table Page
-	**Created News Index Page
 	**Created Tickets Page
 	**Created About Club Page
 	**Created Fans Page
 	**Created Shop Page
 	**Fixed Loan section sticking to footer on team profile page
 
+	
+21/12/17
+	-Created News Index Page
+	-Made a standard news page template
 	
 20/12/17
 	-Solved issue of page not updating with database
