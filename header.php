@@ -33,7 +33,7 @@
 	  <div class="title">
 		<div class="titleBarContent">
 		  
-		  <img class="veryTopCelticLogo" src="img/crest.png" />
+		  <a href="index.php"><img class="veryTopCelticLogo" src="img/crest.png" /></a>
 		  <a href="index.php"><h1>Celtic FC</h1></a>
 			<div id="titleBarNav">  
 				<ul >

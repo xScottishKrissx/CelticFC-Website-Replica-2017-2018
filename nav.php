@@ -7,7 +7,7 @@
 					<a href="standardnews.php"><span class="column2">News</span></a>  
 					<a href="#"><span class="column3">Tickets</span></a>  
 					<a href="#"><span class="column4">Celtic TV</span></a>  
-					<a href="#"><span class="column5">Club</span></a>  
+					<a href="about.php"><span class="column5">Club</span></a>  
 					<a href="#"><span class="column6">Fans</span></a>  
 					<a href="#"><span class="column7">Shop</span></a> 
 			</div>
@@ -158,7 +158,7 @@
 			</div>
 			<div class="box5">
 				<div class="leftMenu">
-					<p>About Celtic</p>
+					<a href="about.php"><p>About Celtic</p></a>
 					<p>Commercial</p>
 					<p>Corporate Info</p>
 					<p>Contact Details</p>

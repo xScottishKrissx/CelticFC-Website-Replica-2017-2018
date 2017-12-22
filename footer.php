@@ -1,5 +1,5 @@
 		<!-- secondaryAdBar -->
-		<div id="secondaryAdBar">
+		<div id="secondaryAdBar" onLoad="replaceChar()">
 			<img src="img/lowersponsorbar/newbalance.png" />
 			<img src="img/lowersponsorbar/dafabet.png" />
 			<img src="img/lowersponsorbar/magners.png" />
@@ -15,7 +15,7 @@
 	</div>
 	
 	<div id="footer">
-		<img src="img/crest.png" />
+		<a href="index.php"><img src="img/crest.png" /></a>
 		<div class="footerColumn">
 			<ul><a href="\celticPractice">Home</a>
 				<li>Celtic FC Foundation</li>
@@ -38,7 +38,7 @@
 			</ul>
 		</div>
 		<div class="footerColumn">
-			<ul>News
+			<ul><a href="standardnews.php">News</a>
 				<li>Latest News</li>
 				<li>First Team</li>
 				<li>Development Squad</li>
@@ -60,8 +60,8 @@
 			</ul>
 		</div>
 		<div class="footerColumn">
-			<ul>Club
-				<li>About Celtic</li>
+			<ul><a href="about.php">Club</a>
+				<a href="about.php"><li>About Celtic</li></a>
 				<li>Jobs @ Celtic</li>
 				<li>Terms of Use</li>
 				<li>Privacy Policy</li>

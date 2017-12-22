@@ -1,15 +1,15 @@
 		<div id="column2">
 			
 			<div id="quickNav">
-				<img src="https://place-hold.it/140x140" />
-				<img src="https://place-hold.it/140x140" />
-				<img src="https://place-hold.it/140x140" />
-				<img src="https://place-hold.it/140x140" />
+				<img src="img/socialMediaLogos/fixtures.png" />
+				<img src="img/socialMediaLogos/tickets.png" />
+				<img src="img/socialMediaLogos/news.png" />
+				<img src="img/socialMediaLogos/celtictv.png" />
 				
-				<img src="https://place-hold.it/140x140" />
-				<img src="https://place-hold.it/140x140" />
-				<img src="https://place-hold.it/140x140" />
-				<img src="https://place-hold.it/140x140" />
+				<img src="img/socialMediaLogos/celticview.png" />
+				<img src="img/socialMediaLogos/superstore.png" />
+				<img src="img/socialMediaLogos/leaguetable.png" />
+				<img src="img/socialMediaLogos/pools.png" />
 			</div>
 			
 			<div id="banners">				

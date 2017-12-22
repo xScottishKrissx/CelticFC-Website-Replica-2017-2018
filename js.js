@@ -1,10 +1,16 @@
+
+	
+	
+
+
+
 $(document).ready(function() {
   //$(".flight_no, .price").css("height", $(".legs").height());
   
   //Using height of column 1 to set height of column 2
-  $("#column2").css("height", $("#column1").height());
+  //$("#column2").css("height", $("#column1").height());
   
-  
+	
   //$("#matchdayCrests").css("height", $("#matchdayText").height());
   
   $(".column1, .box1").hover(function(){
@@ -75,12 +81,13 @@ if($ (".pagingLinkDisabled") .length){
 
 
 
+
 $(window).resize(function(){
-	$("#column2").css("height", $("#column1").height());
+	//$("#column2").css("height", $("#column1").height());
 	$("#footer").css("width", $(".content").width());
 });
 
 $(window).on('load', function(){
-	$("#column2").css("height", $("#column1").height());
+	//$("#column2").css("height", $("#column1").height());
 	$("#footer").css("width", $(".content").width());
 });

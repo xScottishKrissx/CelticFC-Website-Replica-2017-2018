@@ -1,0 +1,17 @@
+useful sql code
+
+//Replace
+
+	html apostrophes
+           //table Name       /column           /column   old   new
+	update newsindexitems set content = replace(content, '‘', '\'')
+	
+	//replace £ sign
+	update newsindexitems set content = replace(content, '£', '&pound;')
+	
+	//replace - sign
+	update newsindexitems set content = replace(content, '–', '-')
+	
+	//replace " sign
+	update newsindexitems set content = replace(content, '"', '&quot;')
+	update newsindexitems set content = replace(content, '”', '&quot;')

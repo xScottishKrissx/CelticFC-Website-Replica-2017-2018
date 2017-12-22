@@ -70,7 +70,7 @@
 			echo '<p>', $e->getMessage(), '</p>';
 		}
 		?>
-
+		
 	</div>
 </div>
 

@@ -1,21 +1,38 @@
 ** == Known Issues Planned
-	**Made a most read column for news pages
+	
 	**Cleaned up code to be less repetitive
 	**Prettify URLs
-    **Create Error page for Player profile page
 	**Seperated PlayerProfile PHP code from playerprofile.php
 	**Set the title of each page dynamically
-	**Added quick nav logos
+	**Made NAV bar more responsive
 	**Fixed Nav bug where leaving column header at wrong place
 	  will cancel hover.
+		*Hard to replicate this
+	**Created Search functionality for news index
 	**Created First Team Fixtures and Results Page
 	**Created League Table Page
 	**Created Tickets Page
-	**Created About Club Page
 	**Created Fans Page
 	**Created Shop Page
-	**Fixed Loan section sticking to footer on team profile page
-
+	**Made Sure the site is suitable for multiple devices	
+	**Made Most Read Column function as it sounds
+	**Created the nav bar that exists below the main nav bar
+	
+	
+22/12/18
+	-Added content to the news section
+	-Fixed image when page is resized on news article page
+	-Made a most read column for news pages
+	-Made Small adjustments to responsive of website across devices
+	-Added Celtic View Banner to News Article Page where needed
+	-Added Author to news article page
+	-Fixed Loan section sticking to footer on team profile page
+	-Added quick nav logos
+	-Added Social media icons to the front page
+	-Added News Link to footer
+	-Made Main Logo in header and footer a link to front page
+	-Created About Club Page
+	
 	
 21/12/17
 	-Created News Index Page
@@ -39,10 +56,10 @@
  	-Fixed Site Wide Footer and Sponsor Bug
 	-Fixed Headers on First Team Page
 	-Added Team Page Link to Nav sections where required
+	
 14/12/17
 	-Added the structure for when clicking on a players image in the team page
 	section takes you to a new page with the information on it. 
-	
 	
 13/12/17 Changelog
 

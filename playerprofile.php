@@ -2,15 +2,17 @@
 
 
 <?php 
+try{
     $player = $_GET["id"];
 	
 	$result = $db->prepare("select * from playerstats where id LIKE :player");
 	$player = "%" . $player . "%";
 	$result->bindParam(':player', $player);	
 	$result->execute();
+
+
 	
 	while ($row = $result->fetch(PDO::FETCH_ASSOC)){
-		
 		$pagetitle = $row['name'];
 		
 		$squad_num = $row['squad_num'];
@@ -25,8 +27,12 @@
 		$nationality  = $row['nationality'];
 		$caps  = $row['caps'];
 		$imagepath  = $row['imagepath'];
-	};
+	}
+
 	
+}Catch(Exception $e) {
+	die("Oops something went wrong");
+};
 	
 ?>
 

@@ -61,15 +61,15 @@
 				
 				<div id="celticSocialMedia">
 					<h1 class="homePageSectionHeaders">JOYFUL AND TRIUMPHANT</h1>
-					<img src="https://place-hold.it/140x140" />
-					<img src="https://place-hold.it/140x140" />
-					<img src="https://place-hold.it/140x140" />
-					<img src="https://place-hold.it/140x140" />
+					<a href="#"><img src="img/socialmedialogos/facebook.png" /></a>
+					<a href="#"><img src="img/socialmedialogos/twitter.png" /></a>
+					<a href="#"><img src="img/socialmedialogos/youtube.png" /></a>
+					<a href="#"><img src="img/socialmedialogos/celtictv.png" /></a>
 					
-					<img src="https://place-hold.it/140x140" />
-					<img src="https://place-hold.it/140x140" />
-					<img src="https://place-hold.it/140x140" />
-					<img src="https://place-hold.it/140x140" />
+					<a href="#"><img src="img/socialmedialogos/snapchat.png" /></a>
+					<a href="#"><img src="img/socialmedialogos/googleplus.png" /></a>
+					<a href="#"><img src="img/socialmedialogos/instagram.png" /></a>
+					<a href="#"><img src="img/socialmedialogos/celticview.png" /></a>
 				</div>
 				
 				<div id="stadiumTours">
