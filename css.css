@@ -427,9 +427,49 @@ nav{margin-bottom:6%;}
 }	
 
 		
-		
-		
-		
+/******************************************************************************/
+/*************************Tickets Page ****************************************/
+/******************************************************************************/		
+.ticketsHeader{}
+	.ticketsHeader img{width:100%;}
+	.ticketsHeader h1{
+		background-color:#4A4B4B;
+		color:#FC0;		
+		font-family:BigNoodleTitling;
+		font-size:3em;
+		margin:0;
+		padding:10px;
+	}
+	
+.ticketsContent{    
+	padding-left: 10px;
+    font-family: Lato;
+    font-size: 0.9em;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+	.ticketsContent h1{
+		border-bottom: 3px solid #015120;
+		color:#000;
+		font-family:BigNoodleTitling;
+		font-size: 2.2em;
+		margin: auto;
+		width: auto;
+	}
+		.matchInformation{
+			font-weight: bold;
+			float:left;
+			line-height:0px;
+			padding-top:20px;
+		}
+		.ticketsTeamLogos{
+			text-align:right;
+		}
+			.ticketsTeamLogos img{
+				height:78px;
+				width:78px;
+				
+			}
 		
 		
 		

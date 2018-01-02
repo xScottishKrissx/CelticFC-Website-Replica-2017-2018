@@ -11,13 +11,16 @@
 	**Created Search functionality for news index
 	**Created First Team Fixtures and Results Page
 	**Created League Table Page
-	**Created Tickets Page
+	
 	**Created Fans Page
 	**Created Shop Page
 	**Made Sure the site is suitable for multiple devices	
 	**Made Most Read Column function as it sounds
 	**Created the nav bar that exists below the main nav bar
 	
+
+2/1/18
+	-Created Tickets Page
 	
 22/12/18
 	-Added content to the news section

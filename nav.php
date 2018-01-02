@@ -5,7 +5,7 @@
 					<a href="index.php"><span>Home</span></a>
 					<a href="team.php"><span class="column1">Team</span></a> 
 					<a href="standardnews.php"><span class="column2">News</span></a>  
-					<a href="#"><span class="column3">Tickets</span></a>  
+					<a href="tickets.php"><span class="column3">Tickets</span></a>  
 					<a href="#"><span class="column4">Celtic TV</span></a>  
 					<a href="about.php"><span class="column5">Club</span></a>  
 					<a href="#"><span class="column6">Fans</span></a>  
@@ -44,15 +44,15 @@
 				
 				<div class="box2">
 					<div class="leftMenu">
-						<p>News</p>
+						<a href="standardnews.php"><p>News</p></a>
 						<p>Match Report</p>
 						<p>Publications</p>
 					</div>
 					<div class="rightMenu">
 						<div class="rightMenuSubColumn">
-							<h1>News</h1>
-							<p>All</p>
-							<p>First Team</p>
+							<a href="standardnews.php"><h1>News</h1></a>
+							<a href="standardnews.php"><p>All</p></a>
+							<a href="standardnews.php"><p>First Team</p></a>
 							<p>Development Squad</p>
 							<p>Academy</p>
 							<p>Women's Team</p>
