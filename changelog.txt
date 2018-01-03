@@ -9,20 +9,22 @@
 	  will cancel hover.
 		*Hard to replicate this
 	**Created Search functionality for news index
-	**Created First Team Fixtures and Results Page
-	**Created League Table Page
-	
-	**Created Fans Page
-	**Created Shop Page
 	**Made Sure the site is suitable for multiple devices	
 	**Made Most Read Column function as it sounds
-	**Created the nav bar that exists below the main nav bar
 	
-
+	
+3/1/18
+	-Tweaks to the Tickets Page	
+	Removed Goal - Created First Team Fixtures and Results Page
+	Removed Goal - Created League Table Page	
+	Removed Goal - Created Fans Page
+	Removed Goal - Created Shop Page
+	Removed Goal - Created the nav bar that exists below the main nav bar
+	
 2/1/18
 	-Created Tickets Page
 	
-22/12/18
+22/12/17
 	-Added content to the news section
 	-Fixed image when page is resized on news article page
 	-Made a most read column for news pages

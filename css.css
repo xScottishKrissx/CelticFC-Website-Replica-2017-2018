@@ -431,7 +431,7 @@ nav{margin-bottom:6%;}
 /*************************Tickets Page ****************************************/
 /******************************************************************************/		
 .ticketsHeader{}
-	.ticketsHeader img{width:100%;}
+	.ticketsHeader img{width:100%; height:295px; position:relative; z-index:2;}
 	.ticketsHeader h1{
 		background-color:#4A4B4B;
 		color:#FC0;		
@@ -439,6 +439,8 @@ nav{margin-bottom:6%;}
 		font-size:3em;
 		margin:0;
 		padding:10px;
+		position:relative;
+		z-index:3;
 	}
 	
 .ticketsContent{    
@@ -462,14 +464,37 @@ nav{margin-bottom:6%;}
 			line-height:0px;
 			padding-top:20px;
 		}
+		
 		.ticketsTeamLogos{
 			text-align:right;
+			margin-bottom:30px;
 		}
 			.ticketsTeamLogos img{
 				height:78px;
 				width:78px;
 				
 			}
+		 .buyTicketsButton{ 
+			background-color: #009850; 
+			color:white !important;
+			width: 8em; 
+			padding: 0.6rem 1.2em; 
+			text-align:center;
+			font-size: 1.3rem;
+			font-family: BigNoodleTitling;
+			margin: 10px 20px 0 0;
+		}
+			/* Removes the first button from the tickets section */
+			.etickets{display:none;}
+#ticketOfficeOpeningInfo{
+	font-weight: normal;
+    line-height: 5px;
+	width:100%;
+	min-width:806px;
+	margin-bottom:50px;
+}
+
+
 		
 		
 		

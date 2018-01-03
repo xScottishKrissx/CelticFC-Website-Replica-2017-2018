@@ -2,7 +2,7 @@
 <div id="column1">
 
 	<div class="ticketsHeader">
-		<img src="img/tickets/ticketsHeader.jpg" />
+		<img src="img/tickets/ticketHeader_zenit.jpg" />
 		<h1>Ticket office opens between christmas and new year</h1>
 	</div>
 
@@ -34,9 +34,9 @@
 							foreach ($iterator as $row){
 								echo "<h1>" . $row["title"] . "</h1>";
 								echo "<div class='matchInformation'>" . $row["match_information"] . "</div>";
-								echo "<div class='ticketsTeamLogos'><img src='img/tickets/logos/celtic.png' />";
+								echo "<div class='ticketsTeamLogos ".$row['buy_tickets_link']." '><img src='img/tickets/logos/celtic.png' />";
 								echo "<img src=img/tickets/logos/" . $row["opposing_team"] . ".png /></div>";
-								echo "<br/>" . $row["buy_tickets_link"] . "<br/><br/>";
+								echo "<br/><a href='#' class='buyTicketsButton'>Buy Tickets</a><br/><br/>";
 								echo $row["main_content"];				
 							}
 							
