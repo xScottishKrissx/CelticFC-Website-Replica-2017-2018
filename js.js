@@ -1,9 +1,3 @@
-
-	
-	
-
-
-
 $(document).ready(function() {
   //$(".flight_no, .price").css("height", $(".legs").height());
   
@@ -76,9 +70,19 @@ if($ (".pagingLinkDisabled") .length){
   
   
   console.log("Hello");
+  
+
+/* Datepicker */
+
+
+
 });
+$('.datepicker').datepicker();
 
-
+$('.input-daterange').datepicker({
+    autoclose: true,
+    todayHighlight: true
+});
 
 
 
@@ -91,3 +95,9 @@ $(window).on('load', function(){
 	//$("#column2").css("height", $("#column1").height());
 	$("#footer").css("width", $(".content").width());
 });
+
+function fixdate($date) {
+    return date('d-m-Y', strtotime($date));
+}
+
+

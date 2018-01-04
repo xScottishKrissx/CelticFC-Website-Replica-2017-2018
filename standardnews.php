@@ -2,7 +2,22 @@
 
 <div id="column1">
 	<div class="newsIndex">
-		<div class="newsSearchBox">!!Form Section!!</div>
+		<div class="newsSearchBox">
+		
+		
+		<form  action="form.php" method="post" autocomplete="off" > 
+			<input type="text" name="search" placeholder="Search News..." value="" /><br /> 
+			
+			<div class="input-daterange input-group" id="datepicker">
+				<input type="text" id="dateFrom" class="input-sm form-control" name="start" />
+				<span class="input-group-addon">to</span>
+				<input type="text" id="dateTo" class="input-sm form-control" name="end" />
+			</div>
+			
+			<input type="submit" value="Submit" /> 
+		</form>
+		
+		</div>
 
 		<?php
 
@@ -45,11 +60,14 @@
 			$iterator = new IteratorIterator($stmt);
 			
 			foreach($iterator as $row){
+				$originalDate = $row['date'];
+				$newDate = date("d M, Y", strtotime($originalDate));
+				
 				echo "<a class='newsIndexItemLink' href='standardnewsPage.php?title=" . $row['title'] . " '> ";
 				echo "<div class='newsItem'>";
 				echo "<div class='newsIndexImage'><img src='img/news/" .$row['image'] . "' /></div>";
 				echo "<div class='newsIndexTitle'>" . $row['title'] . "</div>";
-				echo "<div class='newsIndexDate'>" . $row['date'] . "</div>";
+				echo "<div class='newsIndexDate'>" . $newDate . "</div>";
 				echo "</div>";
 				echo "</a>";
 			}
@@ -65,7 +83,7 @@
 		// Display the paging information
 		echo '<div id="paging"><p>', $prevlink, ' Page ', $page, ' of ', $pages, ' ' , $nextlink, ' </p></div>';
 		
-				
+		
 		} catch (Exception $e) {
 			echo '<p>', $e->getMessage(), '</p>';
 		}

@@ -7,11 +7,19 @@
 	**Made NAV bar more responsive
 	**Fixed Nav bug where leaving column header at wrong place
 	  will cancel hover.
-		*Hard to replicate this
-	**Created Search functionality for news index
+		*Hard to replicate this	
+	**Paginate search results
+	**Added filter by date to search
 	**Made Sure the site is suitable for multiple devices	
 	**Made Most Read Column function as it sounds
+	**Fixed Horizontal scrolling issue
 	
+	
+4/1/18
+	-Added Search functionality for news index
+	-Added Datepicker front end
+	-Tweaks to news index
+		-Changed date format to 12 Jan, 2018 from 12-01-2018
 	
 3/1/18
 	-Tweaks to the Tickets Page	
