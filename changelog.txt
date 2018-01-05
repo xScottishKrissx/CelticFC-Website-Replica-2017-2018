@@ -9,12 +9,14 @@
 	  will cancel hover.
 		*Hard to replicate this	
 	**Paginate search results
-	**Added filter by date to search
 	**Made Sure the site is suitable for multiple devices	
 	**Made Most Read Column function as it sounds
 	**Fixed Horizontal scrolling issue
 	
+5/1/18
+	-Added filter by date to search
 	
+
 4/1/18
 	-Added Search functionality for news index
 	-Added Datepicker front end

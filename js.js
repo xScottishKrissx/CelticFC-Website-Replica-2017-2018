@@ -69,20 +69,37 @@ if($ (".pagingLinkDisabled") .length){
 }
   
   
-  console.log("Hello");
-  
+console.log("Hello");
 
-/* Datepicker */
+
+	
+var startDate;
+var endDate;
+$('#datepicker').datepicker({autoclose: true,format:'dd-mm-yyyy',todayHighlight: true,}).on('changeDate', function(){
+			//var test1 = $('#datepicker').datepicker('getStartDate');
+			//$('#startDateOutput').html(test1);
+			$('#startDateOutput').html(
+				$('#dateFrom').datepicker('getFormattedDate')
+			);
+			$('#endDateOutput').html(
+				$('#dateTo').datepicker('getFormattedDate')
+			);
+			startDate = $('#startDateOutput').html();
+			endDate = $('#endDateOutput').html();
+			console.log(startDate);
+			console.log(endDate);
+
+    });
+
+
+
 
 
 
 });
-$('.datepicker').datepicker();
 
-$('.input-daterange').datepicker({
-    autoclose: true,
-    todayHighlight: true
-});
+
+
 
 
 

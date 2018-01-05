@@ -15,6 +15,9 @@
 			</div>
 			
 			<input type="submit" value="Submit" /> 
+			<p id="startDateOutput"></p>
+			<p id="endDateOutput">2</p>
+			
 		</form>
 		
 		</div>
