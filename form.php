@@ -4,10 +4,8 @@
 	<div class="newsIndex">
 		<div class="newsSearchBox">
 		
-		<form action="form.php" method="post" autocomplete="off" > 
-			<input type="text" name="search" placeholder="Search News..."/><br /> 
-			<input type="submit" value="Submit" /> 
-		</form>
+		<!-- code for the news search box -->
+		<?php include ("newsSearchForm.php"); ?>
 		
 		</div>
 
@@ -15,45 +13,40 @@
 			try{
 			
 				if(!empty($_POST['search'])){
-					$searchq = $_POST['search'];
-					
+					//GETTING THE INPUT FROM THE DATEPICKER AND SEARCH BOX
+					$searchq = $_POST['search'];					
 					$startDate = $_POST['start'];
-					//$endDate = $_POST['end'];
+					$endDate = $_POST['end'];
 					//$startDate = "01-01-18";
 					//$endDate = "12-01-18";
-					//$searchq = preg_replace("#[^0-9a-z]#i","",$searchq);				
+					
+					//REMOVING SPACES AND SYMBOLS
+					$searchq = preg_replace("#[^0-9a-z]#i","",$searchq);				
 					
 					//$query = $db->prepare('SELECT * FROM newsindexitems WHERE title LIKE :userquery);
-					
 					//This Works
 					//$query = $db->prepare('SELECT * FROM newsindexitems WHERE date = "2018-01-01"'); 
-					
 					//$string = "2018-01-01";
-					
 
+					//FORMATTING THE DATEPICKER INPUT
+					$startDateString = $startDate;
+					$formattedStartDate = strtotime($startDateString);
+					$properFormatStartDate = date ("Y-m-d", $formattedStartDate);
 					
-					$string = $startDate;
-					$timestamp = strtotime($string);
-					$properString = date ("Y-m-d", $timestamp);
+					$endDateString = $endDate;
+					$formattedEndDate = strtotime($endDateString);
+					$properFormatEndDate = date ("Y-m-d", $formattedEndDate);
 					
-					$higherString = "2018-01-09";
-					$higherTimestamp = strtotime($higherString);
-					$higherProperString = date ("Y-m-d", $higherTimestamp);
-					
-					
+					//GETTING THE QUERY READY
 					//$query = $db->prepare('SELECT * FROM newsindexitems WHERE date = :string');
-					$query = $db->prepare('SELECT * FROM newsindexitems WHERE date BETWEEN :lowerString AND :higherString');
-					
-					
-					//$searchquery = '%' . $searchq  . '%';
+					$query = $db->prepare('SELECT * FROM newsindexitems WHERE title LIKE :userquery AND date BETWEEN :lowerString AND :higherString');
+					$searchquery = '%' . $searchq  . '%';
 					//$startDatequery = strtotime($startDate);
-					//$endDatequery = strtotime($endDate);
+					//$endDatequery = strtotime($endDate);			
 					
-					
-					
-					//$query->bindParam(':userquery', $searchquery);
-					$query->bindParam(':lowerString', $properString);
-					$query->bindParam(':higherString', $higherProperString);
+					$query->bindParam(':userquery', $searchquery);
+					$query->bindParam(':lowerString', $properFormatStartDate);
+					$query->bindParam(':higherString', $properFormatEndDate);
 					//$query->bindParam(':startDate', $startDatequery);
 					//$query->bindParam(':endDate', $endDatequery);
 					

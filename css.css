@@ -48,7 +48,7 @@
 		#dafabetLogoTitle {width:48px; height:34px;}
 		#magnersLogoTitle {width:78px; height:34px;}
 	
-#wrapper{}
+#wrapper{background-color:#3D3D3D;}
  
 /*My Custom Nav Menu */
 nav{margin-bottom:6%;}
@@ -330,7 +330,57 @@ nav{margin-bottom:6%;}
 /***************************************************************************/
 		
 .newsIndex{}		
-	.newsSearchBox{}		
+	.newsSearchBox{
+		background-color:#D5D5D5;
+		height:50px;
+		width:100%;
+	}		
+		.newsSearchForm{display:inline-block;}
+			.inputDiv{
+				float:left; 
+				padding-top:10px; 
+				padding-left:10px;
+				width:300px;
+				
+			}
+				#search{
+					width:100%; 
+					border: 2px solid black;
+					height: 32px;
+					line-height: 1.4;
+					padding: 5px 10px;
+					border-radius: 0;
+					margin-right:10px;
+				}
+			#datepicker{float:left; padding:10px; width:400px;}
+				#dateFrom{
+					border: 2px solid black;
+					height: 32px;
+					line-height: 1.4;
+					padding: 5px 10px;
+					border-radius: 0;
+					margin-right:10px;
+				}
+				.input-group-addon{display:none;}
+				#dateTo{
+					border: 2px solid black;
+					height: 32px;
+					line-height: 1.4;
+					padding: 5px 10px;
+					border-radius: 0;
+				}
+			.submitBtn{
+				float:left; 
+				width:100px;
+				padding-top:10px;
+			}
+				.submitBtn input{    
+					border: 2px solid #009850;
+					background: #009850;
+					color: white;
+					cursor: pointer;
+					height:32px;
+				}
 
 	.newsItem{
 		font-family:BigNoodleTitling;

@@ -1,5 +1,6 @@
 <?php	include ('header.php'); ?>
 
+
 <?php 
 	try{
 				$clickedLink = $_GET["title"];
@@ -9,6 +10,7 @@
 				$result->execute();
 
 				while ($row = $result->fetch(PDO::FETCH_ASSOC)){
+					$pageID = $row["id"];
 					$title = $row["title"];
 					$author = $row["author"];
 					$content = $row["content"];
@@ -17,6 +19,11 @@
 					//$content = $row["content"];
 					
 				};
+				
+				include ("pageCounter.php");
+
+	
+				
 	}catch(Exception $e) {
 		echo '<p>', $e->getMessage(), '</p>';
 				echo '<p>', $e->getMessage(), '</p>';

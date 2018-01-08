@@ -8,10 +8,18 @@
 	**Fixed Nav bug where leaving column header at wrong place
 	  will cancel hover.
 		*Hard to replicate this	
-	**Paginate search results
-	**Made Sure the site is suitable for multiple devices	
-	**Made Most Read Column function as it sounds
+	**Made Sure the site is suitable for multiple devices
 	**Fixed Horizontal scrolling issue
+
+8/1/18
+	-Added Upper limit to search by date
+	-Added ability to search by term and date	
+	-Made Most Read Column function as it sounds
+	-Added Hidden View Counter to website
+	-Tweaked Appearance of news search from to be similiar to real form
+	-Changed background color of page to be correct
+	
+	Removed Goal - Paginate search results
 	
 5/1/18
 	-Added filter by date to search
