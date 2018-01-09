@@ -11,6 +11,9 @@
 	**Made Sure the site is suitable for multiple devices
 	**Fixed Horizontal scrolling issue
 
+9/1/18
+	-Started tweaking the website to be better across devices.
+	
 8/1/18
 	-Added Upper limit to search by date
 	-Added ability to search by term and date	
