@@ -10,6 +10,7 @@
 	background-color:#009850; 
 	font-family:BigNoodleTitling,Impact,Tahoma,Arial;
 	min-width:1200px;
+	height:154px;
 	/* border-bottom:8px solid #155724; */
 	}
 
@@ -61,7 +62,8 @@ nav{margin-bottom:6%;}
     width: 100%;
 	display:table;
 	}
-.columnHeaders{    border-bottom: 8px solid #155724;
+.columnHeaders{    
+	border-bottom: 8px solid #155724;
     z-index: 100;
     font-size: 1.8em;
     text-transform: uppercase;
@@ -74,7 +76,7 @@ nav{margin-bottom:6%;}
 	
 	background-color:#00984f;
 	width:100%;
-	max-width:1184px;
+	/*max-width:1184px;*/
 	
 	/* left:0; */
 }
@@ -89,14 +91,18 @@ nav{margin-bottom:6%;}
 	}
 		.columnHeaders a:hover > span{border-bottom:7px solid #ffcc00;}
 
-.dropdownContainer{font-family:BigNoodleTitling,Impact,Tahoma,Arial;}
+.dropdownContainer{font-family:BigNoodleTitling,Impact,Tahoma,Arial;
+	background-color:red;
+	width:1184px;
+	margin:0 auto;
+}
 	.box1, .box2, .box3, .box4, .box5, .box6, .box7{
 		background:url(img/menuBg.png) repeat-x;    
 		border-bottom:6px solid #00984e;
 		display: none;
 		height: 100%;
 		line-height:10px;
-		max-height:400px;
+		max-height:25.5rem;
 		max-width:1184px;
 		margin-top:72px;
 		position: absolute;
@@ -104,6 +110,7 @@ nav{margin-bottom:6%;}
 		z-index:1001;
 		
 	}
+	
 	.box3 .rightMenuSubColumn p{line-height:13px;}
 	.box4 .rightMenuSubColumn p{line-height:15px; height:45px;}
 	.box5 .rightMenuSubColumn p{line-height:12px;}
@@ -141,7 +148,7 @@ nav{margin-bottom:6%;}
 	border-bottom:8px solid #009850; 
 	font-family:BigNoodleTitling,Impact,Tahoma,Arial; 
 	z-index:0; 
-	margin-top:72px;
+	
 	}
 
 .carousel-indicators{left:auto; bottom:0;margin-right:0;}
@@ -181,7 +188,7 @@ nav{margin-bottom:6%;}
 	#sub-column-2{width:40%; float:left; border-right: 1px solid #ccc;}
 	#sub-column-1>div, #sub-column-2>div{padding:1em;}
 
-#column2{background-color:#F0F0F0; width:27%; display:inline-block; padding:5px; }	
+#column2{background-color:#DBE6DF; width:27%; display:inline-block; padding:5px; }	
 	#quickNav img{padding:5px; height:140px; width:140px;}
 	#banners img{padding:3px; margin-top:10px;}
 /*#column1 h1, #column2 h1{	font-size: 1.5rem; font-family: BigNoodleTitling; border-bottom: 3px green solid; width: 310px;} */
@@ -225,94 +232,7 @@ nav{margin-bottom:6%;}
 
 
 
-/* First Size Change */
-@media screen and (max-width:1269px ) 
-{
 
-/*Nav */
-
-#header{max-width:100%; min-width:auto;}
-	.titleBarContent{
-		margin:0 auto;
-		width:959px;
-		/*background-color:red;*/
-		/*border:solid;*/
-		height:inherit;
-	}
-	
-		/*.titleBarContent h1{left:10rem;}*/
-		.titleBarContent ul {/*left:14rem;*/ font-size:0.9em; position:absolute;}
-			.titleBarContent ul li{
-				margin-left:5px;
-				margin-right:5px;
-				left:auto;
-				
-			}
-			#titleBarNav ul li:nth-child(1){
-				margin-left:17rem;
-			}
-			.veryTopCelticLogo{margin-left:0.3rem;}
-
-		/*.titleBarContent img{left:9rem;}*/
-	
-
-	.columnHeaders{font-size:1.8rem; max-width:59.5rem;}
-		.columnHeaders span{
-			margin:-1rem;
-			padding-right:40px;
-			padding-left:40px;
-		}
-		.columnHeaders>a:nth-child(1){
-			padding-left:5rem;
-		}
-
-
-
-		
-.content{width:952px;}
-#column1{width:66%} 
-#column2{width:34%;} 
-
-#secondaryAdBar img{padding-right:0px; clear:both;}
-.footerColumn{width:13%;} 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Second Size Change */
-@media screen and (max-width:979px ) 
-{
-	.content{width:737px;} 
-
-	
-	
-		#column1{width:57%} 
-		#column2{width:43%;} 
-	#sub-column-1, #sub-column-2{float:none; width:100%;}
-
-	
-	
-}
-
-
-
-@media screen and (max-width:764px ) {.content{width:462px;} }
-@media screen and (max-width:479px ) {.content{width:320px;} }
 
 /***************************************************************************/
 /************************* TEAM PAGE ***************************************/
@@ -623,7 +543,181 @@ nav{margin-bottom:6%;}
 	margin-bottom:50px;
 }
 
+/*******************************************************************************************
+********************************************************************************************
+									Media Queries
+********************************************************************************************
+*******************************************************************************************/
 
+
+
+
+/* First Size Change */
+@media screen and (max-width:1269px ) 
+{
+
+/*Nav */
+
+#header{max-width:100%; min-width:auto;}
+	.titleBarContent{
+		margin:0 auto;
+		width:959px;
+		/*background-color:red;*/
+		/*border:solid;*/
+		height:inherit;
+	}
+	
+		/*.titleBarContent h1{left:10rem;}*/
+		.titleBarContent ul {/*left:14rem;*/ font-size:0.9em; position:absolute;}
+			.titleBarContent ul li{
+				margin-left:5px;
+				margin-right:5px;
+				left:auto;
+				
+			}
+			#titleBarNav ul li:nth-child(1){
+				margin-left:17rem;
+			}
+			.veryTopCelticLogo{margin-left:0.3rem;}
+
+		/*.titleBarContent img{left:9rem;}*/
+	
+.columnHeadersWrapper{padding-left:5rem;}
+	.columnHeaders{font-size:1.8rem; max-width:76.3rem;}
+		.columnHeaders span{
+			margin:-1rem;
+			padding-right:40px;
+			padding-left:40px;
+		}
+		.columnHeaders>a:nth-child(1){
+			padding-left:5rem;
+		}
+	
+	.box1, .box2, .box3, .box4, .box5, .box6, .box7{
+		max-height:24.4rem;
+		max-width:59.5rem;
+		
+	}
+
+		.rightMenuSubColumn h1{font-size:2rem;}
+		.rightMenuSubColumn img {width:225px; height:125px;}
+		
+		.box4 .rightMenuSubColumn h1{margin-left:0.6rem;}
+		.box4 .rightMenuSubColumn p{height:auto;}
+
+
+		
+	.content{width:952px;}
+		#column1{width:66%} 
+			#matchdayCrests{margin-bottom:1rem; margin-left:4rem;}
+			#matchdayText{clear:left;}
+
+			#celticSocialMedia{}
+			
+		#column2{width:34%;} 
+		
+/*Team Page */
+.playerProfilePageContent{width:66%;}
+	.playerProfilePageContent img{width:100%; height:auto;}
+	
+	
+	
+	
+/*News */
+.newsSearchBox{margin-top:0.9rem;}
+	#search{width:17rem;}
+	#datepicker{width:14rem;}
+	.submitBtn{margin-left:0.2rem;}
+
+.newsItem{
+	font-size:1.8rem;
+	word-wrap:break-word;
+	line-height:100%;
+	
+}
+	.newsIndexTitle{padding-right:1rem; padding-left:0.5rem;}
+	.newsIndexDate{font-size:1rem; min-width:4rem;}
+
+#secondaryAdBar img{padding-right:0px; clear:both;}
+.footerColumn{width:13%;} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Second Size Change */
+@media screen and (max-width:979px ) 
+{
+	
+	
+	/*Bringin the sponsor bar tighter together */
+	.titleBarContent{width:740px;}
+	.titleBarContent ul li{margin-left:auto; margin-right:auto;}
+	#titleBarNav ul li:nth-child(1){
+		margin-left:13rem;
+	}
+	
+	/*Removing the sponsor from view */
+	.titleBarContent ul li:nth-child(7){
+		display:none;
+	}
+	
+	.columnHeaders{
+		width:46.09rem;
+	}
+		.columnHeaders span{padding-right:1.5rem; padding-left:2rem;}
+	
+	
+	.box1, .box2, .box3, .box4, .box5, .box6, .box7{max-width:46.04rem;}	
+		.rightMenuSubColumn img{width:177px; height:100px;}
+		.rightMenuSubColumn h1{font-size:1.7rem;}
+		.rightMenuSubColumn h2{font-size:1.5rem;}
+	
+	.content{width:737px;} 	
+		#column1{width:57%} 
+			#matchdayCrests{margin-left:auto; margin-right:auto;}
+			#matchdayText{clear:none; float:left; width:11.4rem; margin-top:0.3rem;}
+				#matchdayText p{line-height:1.6rem; margin-bottom:auto; padding-left:0.5rem;}
+				#matchdayInfoButton{clear:both;}
+		
+		#column2{width:43%;} 
+	#sub-column-1, #sub-column-2{float:none; width:100%;}
+	
+	
+	
+/*First Team Page */
+
+.playerItem{width:11rem;}
+.playerName{font-size:1.7rem;}
+
+/* Player Page */
+
+
+
+
+	#secondaryAdBar{padding-left:8rem; padding-right:8rem;}
+		#secondaryAdBar img{margin-top:0.8rem;}
+	
+}
+
+
+
+@media screen and (max-width:764px ) {.content{width:462px;} }
+@media screen and (max-width:479px ) {.content{width:320px;} }
 		
 		
 		

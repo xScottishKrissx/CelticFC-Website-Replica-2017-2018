@@ -1,7 +1,7 @@
 	 <nav class="navRoot">
 		<div class="myNav">
 			<div class="columnHeaders">
-			
+				<div class="columnHeadersWrapper">
 					<a href="index.php"><span>Home</span></a>
 					<a href="team.php"><span class="column1">Team</span></a> 
 					<a href="standardnews.php"><span class="column2">News</span></a>  
@@ -10,6 +10,7 @@
 					<a href="about.php"><span class="column5">Club</span></a>  
 					<a href="#"><span class="column6">Fans</span></a>  
 					<a href="#"><span class="column7">Shop</span></a> 
+				</div>
 			</div>
 			<div class="dropdownContainer">
 				<div class="box1">
@@ -89,22 +90,22 @@
 							<p>Away</p>
 							<p>Access Control System</p>
 							<p>Print at Home Tickets</p>
-							<p>2017/18 Match Ticket Terms</p>
-							<p>2017/18 Ground Regulations</p>
-							<p>2017/18 Rail Seating Safety Code of Conduct</p>
+							<p>Match Ticket Terms</p>
+							<p>Ground Regulations</p>
+							<p>Rail Seating Safety Code of Conduct</p>
 						</div>
 						<div class="rightMenuSubColumn">
 							<h1>Season Tickets</h1>
-							<p>2017/18 Season Tickets</p>
-							<p>2017/18 Season Ticket Terms and Conditions</p>
-							<p>Important 2017/18 Season Ticket Information</p>
-							<p>2017/18 Season Ticket FAQs</p>
-							<p>2017/18 Ground Regulations</p>
-							<p>2017/18 Cancellation Form</p>
+							<p>Season Tickets</p>
+							<p>Season Ticket Terms and Conditions</p>
+							<p>Important Season Ticket Information</p>
+							<p>Season Ticket FAQs</p>
+							<p>Ground Regulations</p>
+							<p>Cancellation Form</p>
 							<p>Privacy Policy</p>
-							<p>2017/18 Season My Celtic Network</p>
-							<p>2018/19 Waiting List</p>
-							<p>2017/18 Rail Seating Safety Code of Conduct</p>
+							<p>My Celtic Network</p>
+							<p>Waiting List</p>
+							<p>Rail Seating Safety Code of Conduct</p>
 						</div>
 						<div class="rightMenuSubColumn">
 							<h1>Matchday</h1>

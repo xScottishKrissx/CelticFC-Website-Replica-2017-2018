@@ -52,9 +52,9 @@
 		  
 	  </div>
 
-		
+		<?php include("nav.php") ?>
 	</div>
 	
 	
 	<div class="content">
-	<?php include("nav.php") ?>
+	
