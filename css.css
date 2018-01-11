@@ -181,18 +181,26 @@ nav{margin-bottom:6%;}
 	
 	#celticSocialMedia {text-align:center;}
 	#celticSocialMedia h1{text-align:left;}
-	#celticSocialMedia img{padding:5px; height:140px; width:140px;}
+	#celticSocialMedia img{padding:4px; height:140px; width:122px;}
+	
 	#stadiumTours img{width:100%;}
 	
 	#sub-column-1{width:60%; float:left; border-right: 1px solid #ccc; }
 	#sub-column-2{width:40%; float:left; border-right: 1px solid #ccc;}
-	#sub-column-1>div, #sub-column-2>div{padding:1em;}
+	#sub-column-1>div, #sub-column-2>div{padding-top:1em;}
 
 #column2{background-color:#DBE6DF; width:27%; display:inline-block; padding:5px; }	
 	#quickNav img{padding:5px; height:140px; width:140px;}
 	#banners img{padding:3px; margin-top:10px;}
-/*#column1 h1, #column2 h1{	font-size: 1.5rem; font-family: BigNoodleTitling; border-bottom: 3px green solid; width: 310px;} */
-.homePageSectionHeaders{font-size: 1.5rem; font-family: BigNoodleTitling; border-bottom: 3px green solid; width: 310px;}
+	
+.homePageSectionHeaders{
+		font-size: 1.5rem; 
+		font-family: BigNoodleTitling; 
+		border-bottom: 3px green solid; 
+		width: 310px;
+		margin-left:1rem;
+	}
+
 
 /* Seccondary Ad Bar */
 #secondaryAdBar{	
@@ -404,7 +412,8 @@ nav{margin-bottom:6%;}
 		.newsIndexDate{
 			/* background-color:blue; */
 			min-width:102px;
-		}		
+		}	
+		.smallDate{display:none;}
 	
 	/**Paging */
 	#paging{
@@ -480,7 +489,7 @@ nav{margin-bottom:6%;}
 /*************************Tickets Page ****************************************/
 /******************************************************************************/		
 .ticketsHeader{}
-	.ticketsHeader img{width:100%; height:295px; position:relative; z-index:2;}
+	.ticketsHeader img{width:100%; position:relative; z-index:2;}
 	.ticketsHeader h1{
 		background-color:#4A4B4B;
 		color:#FC0;		
@@ -542,7 +551,7 @@ nav{margin-bottom:6%;}
 	min-width:806px;
 	margin-bottom:50px;
 }
-
+.mobileNavWrapper{display:none;}
 /*******************************************************************************************
 ********************************************************************************************
 									Media Queries
@@ -555,6 +564,9 @@ nav{margin-bottom:6%;}
 /* First Size Change */
 @media screen and (max-width:1269px ) 
 {
+
+.headerBanner img{max-width:59rem; height:100%}
+
 
 /*Nav */
 
@@ -593,9 +605,10 @@ nav{margin-bottom:6%;}
 			padding-left:5rem;
 		}
 	
+	.dropdownContainer{max-width:59.5rem;}
 	.box1, .box2, .box3, .box4, .box5, .box6, .box7{
 		max-height:24.4rem;
-		max-width:59.5rem;
+		max-width:inherit;
 		
 	}
 
@@ -604,17 +617,20 @@ nav{margin-bottom:6%;}
 		
 		.box4 .rightMenuSubColumn h1{margin-left:0.6rem;}
 		.box4 .rightMenuSubColumn p{height:auto;}
+		
+		
 
 
 		
 	.content{width:952px;}
-		#column1{width:66%} 
+		#column1{width:69%} 
 			#matchdayCrests{margin-bottom:1rem; margin-left:4rem;}
 			#matchdayText{clear:left;}
 
 			#celticSocialMedia{}
 			
-		#column2{width:34%;} 
+		#column2{width:31%;} 
+			#banners img{width:100%;}
 		
 /*Team Page */
 .playerProfilePageContent{width:66%;}
@@ -663,7 +679,7 @@ nav{margin-bottom:6%;}
 @media screen and (max-width:979px ) 
 {
 	
-	
+	.headerBanner img{max-width:46rem;}
 	/*Bringin the sponsor bar tighter together */
 	.titleBarContent{width:740px;}
 	.titleBarContent ul li{margin-left:auto; margin-right:auto;}
@@ -677,46 +693,135 @@ nav{margin-bottom:6%;}
 	}
 	
 	.columnHeaders{
-		width:46.09rem;
+		/*width:59.91rem;*/
 	}
 		.columnHeaders span{padding-right:1.5rem; padding-left:2rem;}
 	
+	.dropdownContainer{max-width:46.07rem;}
+	.box1, .box2, .box3, .box4, .box5, .box6, .box7{max-width:inherit;}	
+		.box4 .rightMenuSubColumn p{word-break:break-word;}
 	
-	.box1, .box2, .box3, .box4, .box5, .box6, .box7{max-width:46.04rem;}	
-		.rightMenuSubColumn img{width:177px; height:100px;}
-		.rightMenuSubColumn h1{font-size:1.7rem;}
-		.rightMenuSubColumn h2{font-size:1.5rem;}
+	
+		.leftMenu{padding-top:1.5rem; font-size:1.3rem;}
+		.rightMenu{font-size:0.9rem;}
+			.rightMenuSubColumn img{width:177px; height:100px;}
+			.rightMenuSubColumn h1{font-size:1.7rem;}
+			.rightMenuSubColumn h2{font-size:1.5rem;}
+	
+	
 	
 	.content{width:737px;} 	
-		#column1{width:57%} 
+		#column1{width:60%} 
 			#matchdayCrests{margin-left:auto; margin-right:auto;}
 			#matchdayText{clear:none; float:left; width:11.4rem; margin-top:0.3rem;}
 				#matchdayText p{line-height:1.6rem; margin-bottom:auto; padding-left:0.5rem;}
 				#matchdayInfoButton{clear:both;}
+			#celticSocialMedia img{height:10rem; width:10rem;}
 		
-		#column2{width:43%;} 
+		#column2{width:40%;} 
 	#sub-column-1, #sub-column-2{float:none; width:100%;}
 	
 	
 	
 /*First Team Page */
 
+.playerProfilePageContent{width:60%;}
+
 .playerItem{width:11rem;}
 .playerName{font-size:1.7rem;}
 
 /* Player Page */
+.nameandposition{line-height:1rem; margin-top:2.1rem; margin-left:1rem;}
+#squadNum{font-size:4rem;}
+#name, #position{font-size:1.5rem;}
+
+.playerStats{font-size:1.1rem; line-height:0.2rem;}
+
+/*News*/
+/*News Index */
+
+/*Search Box */
+#search{width:26rem;}
+.newsSearchBox{height:6rem; margin-top:auto;}
+#dateTo, #dateFrom{width:8rem;}
+.submitBtn{margin-left:7.2rem;}
+
+/* News Items */
+.newsItem{font-size:1.5rem;}
+	.newsIndexImage img{max-height:100px; max-width:166px;}
+	.newsIndexTitle{padding-top:0.2rem;}
+	.newsIndexDate{display:none;}
+	.smallDate{display:block; font-size:1.2rem; margin-bottom:0rem;}
 
 
 
 
-	#secondaryAdBar{padding-left:8rem; padding-right:8rem;}
-		#secondaryAdBar img{margin-top:0.8rem;}
+/*News Article */
+.newsArticleContent{width:100%;}
+	.mostReadColumn{
+		
+		width:100%;
+	}
+	.mostReadItem:nth-child(5){display:none;}
+	
+		.mostReadItem{
+			width: 50%;
+			float: left;
+		}
+	
+			.mostReadItem img{
+				max-height:113px;
+				max-width:195px;
+			}
+
+#secondaryAdBar{padding-left:8rem; padding-right:8rem;}
+#secondaryAdBar img{margin-top:0.8rem;}
 	
 }
 
 
 
-@media screen and (max-width:764px ) {.content{width:462px;} }
+
+/* Third Size Change */
+@media screen and (max-width:764px ) {
+	#header, #myCarousel, #footer,#secondaryAdBar{display:none;}
+	
+	
+	
+	
+	.mobileNavWrapper{
+		display:block;
+		
+		
+		width: 17rem;
+		height: 100%;
+		background-color: red;
+		position:fixed;
+		
+		margin-left:-17rem;
+	
+	}
+	
+	.mobileHeader{
+		height: 140px;
+		width: 462px;
+		background-color: blue;
+		margin: 0 auto;
+	}
+		.showNav{
+			
+		}
+	
+	
+	.content{width:462px;} 
+
+}
+
+
+
+
+
+/* Fourth Size Change */
 @media screen and (max-width:479px ) {.content{width:320px;} }
 		
 		

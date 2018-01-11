@@ -25,9 +25,14 @@
   
   <div id="wrapper"> 	
 	
+	<?php include("mobileNav.php") ?>
+	
+	<div class="mobileHeader">
+		<div class="showNav">Show Nav</div>
+	</div>
 	
 	<div id="header">
-	  <div style="background-color:#009850; height:39px; text-align:center; "class="test1234">
+	  <div class="headerBanner" style="background-color:#009850; height:39px; text-align:center; "class="test1234">
 		<img src="img/veryTopBarImage.jpg" />
 	  </div>
   
@@ -51,7 +56,6 @@
 		</div>
 		  
 	  </div>
-
 		<?php include("nav.php") ?>
 	</div>
 	

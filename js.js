@@ -72,7 +72,7 @@ if($ (".pagingLinkDisabled") .length){
 console.log("Hello");
 
 
-	
+//News Search	
 var startDate;
 var endDate;
 $('#datepicker').datepicker({autoclose: true,format:'dd-mm-yyyy',todayHighlight: true,}).on('changeDate', function(){
@@ -90,6 +90,48 @@ $('#datepicker').datepicker({autoclose: true,format:'dd-mm-yyyy',todayHighlight:
 			console.log(endDate);
 
     });
+
+//Mobile Nav
+/*
+$( ".showNav").click(function() {
+  $(".mobileNavWrapper").toggle( "slow" );
+});
+*/
+
+/*
+  $(".showNav").click(function(){
+	  //$(".mobileNavWrapper").css("margin-left","auto");
+	  //$(".mobileNavWrapper").animate({ marginLeft:"0rem"}, 300);
+	  $(".mobileHeader").animate({ marginLeft:"17rem"}, 300);	
+	  
+*/	
+		
+var handlers = [
+    // on first click:
+    function() {
+        $('#wrapper').animate({marginLeft:"17rem"});
+        //div2').animate({width: '50%'});
+    },
+    // on second click:
+    function() {
+        $('#wrapper').animate({marginLeft:"0rem"});
+        //$('.div2').animate({width: '100%'});
+    }
+    // ...as many more as you want here
+];
+
+var counter = 0;
+$(".showNav").click(function() {
+    // call the appropriate function preserving this and any arguments
+    handlers[counter++].apply(this, Array.prototype.slice.apply(arguments));
+    // "wrap around" when all handlers have been called
+    counter %= handlers.length;
+	console.log(counter);
+});		
+	  
+
+  
+
 
 
 

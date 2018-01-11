@@ -18,8 +18,8 @@
 			$title = $row["title"];
 			$image = $row["image"];			
 			
-			echo "<img src='img/news/".$image."' /> ";
-			echo "<p>" .$title. "</p>";
+			echo "<div class='mostReadItem'><img src='img/news/".$image."' /> ";
+			echo "<p>" .$title. "</p></div>";
 		}		
 	}
 	catch(Exception $e) {

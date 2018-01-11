@@ -45,7 +45,7 @@
 				echo "<a class='newsIndexItemLink' href='standardnewsPage.php?title=" . $row['title'] . " '> ";
 				echo "<div class='newsItem'>";
 				echo "<div class='newsIndexImage'><img src='img/news/" .$row['image'] . "' /></div>";
-				echo "<div class='newsIndexTitle'>" . $row['title'] . "</div>";
+				echo "<div class='newsIndexTitle'>" . $row['title'] . "<p class='smallDate'>" . $newDate . "</p></div>";
 				echo "<div class='newsIndexDate'>" . $newDate . "</div>";
 				echo "</div>";
 				echo "</a>";

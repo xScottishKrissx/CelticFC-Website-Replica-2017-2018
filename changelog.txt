@@ -12,10 +12,17 @@
 	**Fixed Horizontal scrolling issue
 	**Made most read links clickable
 	**Made Footer into collapsible menu for smaller device size
-10/1/19
+
+11/1/18
+	-Further tweaks and fixes for responsive design
+	-Finished 2 of 4 media queries
+	-Started on Mobile Navigation
+	
+	
+10/1/18
 	-Further tweaks and fixes for responsive design
 	
-	9/1/18
+9/1/18
 	-Started tweaking the website to be better across devices.
 	-Finished 1st part of media queries - Up to 1269px
 	
