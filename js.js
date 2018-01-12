@@ -128,9 +128,79 @@ $(".showNav").click(function() {
     counter %= handlers.length;
 	console.log(counter);
 });		
-	  
 
-  
+
+
+
+
+/*
+var teams = "";
+var arrayLength, i, lastClicked, text;
+teams = ["Players","Fixtures","League Table"];
+
+$(".mobileNavContent").click(function(e){
+		if(!$(e.target).is('input')){
+        lastClicked = e.target.className;
+		console.log("Active Class is " + lastClicked);		
+		
+    }	
+	
+		arrayLength = lastClicked.length;
+		text = "<ul>";
+		for (i = 0; i < arrayLength; i++) {
+			text += "<li>" + teams[i] + "</li>";
+		}	
+		
+		$( ".navDepth2" ).html(text);
+});
+var art = "Hello";
+var stk =  ["Players","Fixtures","League Table"];
+var elements ={ [art]: stk };
+console.log(elements[art]);
+*/
+
+
+//Level 1
+
+	//The Dumb Way
+	$(".teams").click(function(e){
+		
+		$( ".navDepth2" ).html( 
+			"<a href='' class='players'><li>Players</li></a><a href=''><li>Fixtures</li></a><a href=''><li>League Table</li></a>"
+			);
+		$( ".navDepth3" ).html( "<a href=''><li>Teams</li></a>" );	
+	});
+
+	$(".news").click(function(){
+		$( ".navDepth2" ).html( "<a href='#' class='news2'><li>News 2</li></a>" );
+		$( ".navDepth3" ).html( "<a href='#' class='news3'><li>News 3</li></a>" );	
+	});
+
+	$(".tickets").click(function(){
+		//Nav Depth 1
+		//Nav Depth 2	
+	});
+	$(".hospitality").click(function(){
+		//Nav Depth 1
+		
+		//Nav Depth 2
+	});
+	$(".club").click(function(){
+		//Nav Depth 1
+		
+		//Nav Depth 2
+	});
+	$(".shop").click(function(){
+		//Nav Depth 1		
+	});
+	$(".more").click(function(){
+		//Nav Depth 1	
+		//Nav Depth 2
+		//Nav Depth 3	
+	});
+
+
+
 
 
 

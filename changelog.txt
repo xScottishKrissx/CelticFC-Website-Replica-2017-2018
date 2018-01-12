@@ -13,6 +13,9 @@
 	**Made most read links clickable
 	**Made Footer into collapsible menu for smaller device size
 
+12/1/18
+	-Continued work on mobile menu
+	
 11/1/18
 	-Further tweaks and fixes for responsive design
 	-Finished 2 of 4 media queries

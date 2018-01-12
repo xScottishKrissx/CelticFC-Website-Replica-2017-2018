@@ -784,8 +784,8 @@ nav{margin-bottom:6%;}
 
 /* Third Size Change */
 @media screen and (max-width:764px ) {
-	#header, #myCarousel, #footer,#secondaryAdBar{display:none;}
-	
+	#header, #myCarousel, #footer,#secondaryAdBar, #column2{display:none;}
+	#column1{width:100%;}
 	
 	
 	
