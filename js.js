@@ -158,38 +158,206 @@ var stk =  ["Players","Fixtures","League Table"];
 var elements ={ [art]: stk };
 console.log(elements[art]);
 */
+	
+	var backToMainBtn = "<a href='#'><li class='backMainMenu'>Back to Main Menu</li></a>";
+	var backNavBtn = "<a href='#'><li class='backNav'>Previous</li></a>";
+	
+	var ticketsArray = ["Home tickets","away tickets","ticket office","new access control","away ticket reg scheme","print @ home","matchday","2017/18 Season Tickets"];
+	
+	var matchdayArray = ["Next Match Details","Getting to Celtic Park","Stadium Plan","First Time Fans","Supporters w/ disabilities","Ground Regulations","Unacceptable Conduct","Big Screen Messages",];
+	
+	//Hospitality Section
+	var hospitalityArray = ["Hospitality","Kerrydale Bar","Meetings and Events","Number 7 Restaurant","Upcoming Events","Offsite Catering","Terms and Conditions","Contact Us",];	
+	var meetingsArray = ["Meetings and Events","Venue Hire","Dining in the Number 7","Upcoming Events","Weddings","Stadium Hire","Testimonials","Christmas"]
+
+	//Club Section
+	var clubArray = ["Contact Information","History","Jobs","Stadium Tours","Soccer Academy","Social Policies","Corporate","Other"];
+	var soccerAcademyArray = ["Holiday Skills School","Weekly Skills School","Play on the Park","Team Training","Make a Booking","International","Coaches Convention"];
+	var socialPoliciesArray = ["Social Mission Statement","Unnaceptable Conduct","Ground Regulations","Social Charter","Fans with Disabilities","Safeguarding"];
+	var corportateArray = ["Board of Directors","Investor News","Boiler Room Scam Advice","Stock Exchange Notification","Share Price","Share Capital","Modern Slavery Statement","Ethical Trading Policy"];
+	var clubOtherArray = ["Location","Club Fans"];
+	
+	//Shop Section
+	var shopArray = ["Online Shop","Bricks and Paving Stones","Shop Locations","Celtic FC Prints","Publications","Celtic TV"];	
+	
+	var moreArray = ["Fans","Celtic FC Foundation","Celtic FC Travel","Celtic Pools","Sponsors","Publications"];
+	var moreFansArray = ["Supporters with Disabilities","Young Hoops Club","Mobile","Supporters",];
+	var youngHoopsClubArray = ["Home","Events","Mascot","Gallery","Competition","Q&A","What Our Members Think"];
+	var mobileArray = ["Celtic View App"];
+	var supportersArray = ["Supporters Liaison Officer","Supporters Charter","Fans Forum","Complaints","Supporters Club"];
+	
+	
+	
+	
+	var matchdayOutput = ""; var hospitalityOutput = ""; var clubOutput = ""; 
+	var clubSocialPoliciesOutput = ""; var clubCorporateOutput = ""; var clubOtherOutput = "";
+	
+var lastClicked;
+function forwardNav(){
+	$(".mobileNavContent").click(function(e){
+		lastClicked = e.target.className;
+		console.log("Active Class is " + lastClicked);		
+		
+		if(lastClicked == 'players'){
+			
+			$( ".navDepth3" ).html( "<a href='#'><li class='backNav'>Back to Teams</li></a><a href='#'><li>First Team</li></a><a href='#'><li>Under 20's</li></a><a href='#'><li>Academy</li></a><a href='#'><li>Women's First Team</li></a><a href='#'><li>Women and Girls</li></a>" );
+			$( ".navDepth3" ).css("background-color","green");
+			
+		}else if(lastClicked == 'fixtures'){
+			
+			$( ".navDepth3" ).html( "<a href='#'><li class='backNav'>Back to Teams</li></a><a href='#'><li>First Team</li></a><a href='#'><li>Development Squad</li></a><a href='#'><li>Women's Team</li></a>" );	
+		}
+		else if(lastClicked == 'league-table'){
+			$( ".navDepth3" ).html( "<a href='#'><li class='backNav'>Back to Teams</li></a><a href='#'><li>SPFL Premiership</li></a><a href='#'><li>Development Squad</li></a><a href='#'><li>Women's Team</li></a>" );	
+			
+		
+		}else if(lastClicked == 'matchdayTickets'){			
+		matchdayOutput = "";
+		for(var i = 0; i < matchdayArray.length; i++){
+			matchdayOutput += "<a href='#'><li>" + matchdayArray[i] + "</li></a>";
+		}
+			$( ".navDepth3" ).html(backNavBtn + matchdayOutput);		
+			forwardNav();		
+			backNav();
+			
+		}else if(lastClicked == 'meetingsAndEvents'){			
+		meetingsOutput = "";
+		for(var i = 0; i < meetingsArray.length; i++){
+			meetingsOutput += "<a href='#'><li>" + meetingsArray[i] + "</li></a>";
+		}
+			$( ".navDepth3" ).html(backNavBtn + meetingsOutput);		
+			forwardNav();		
+			backNav();		
+			
+		}else if(lastClicked == 'clubSoccerAcademy'){			
+		soccerAcademyOutput = "";
+		for(var i = 0; i < soccerAcademyArray.length; i++){
+			soccerAcademyOutput += "<a href='#'><li>" + soccerAcademyArray[i] + "</li></a>";
+		}
+			$( ".navDepth3" ).html(backNavBtn + soccerAcademyOutput);		
+			forwardNav();		
+			backNav();		
+			
+		}else if(lastClicked == 'clubSocialPolicies'){			
+		clubSocialPoliciesOutput = "";
+		for(var i = 0; i < socialPoliciesArray.length; i++){
+			clubSocialPoliciesOutput += "<a href='#'><li>" + socialPoliciesArray[i] + "</li></a>";
+		}
+			$( ".navDepth3" ).html(backNavBtn + clubSocialPoliciesOutput);		
+			forwardNav();		
+			backNav();		
+			
+		}else if(lastClicked == 'clubCorporate'){			
+		clubCorporateOutput = "";
+		for(var i = 0; i < corportateArray.length; i++){
+			clubCorporateOutput += "<a href='#'><li>" + corportateArray[i] + "</li></a>";
+		}
+			$( ".navDepth3" ).html(backNavBtn + clubCorporateOutput);		
+			forwardNav();		
+			backNav();		
+			
+		}else if(lastClicked == 'clubOther'){			
+		clubOtherOutput = "";
+		for(var i = 0; i < clubOtherArray.length; i++){
+			clubOtherOutput += "<a href='#'><li>" + clubOtherArray[i] + "</li></a>";
+		}
+			$( ".navDepth3" ).html(backNavBtn + clubOtherOutput);		
+			forwardNav();		
+			backNav();		
+			
+		}
 
 
+		
+		else{
+			//$(".navDepth1, .navDepth2, .navDepth3").empty();
+		}
+		
+		//I have some class names I want to dynamically put into a var or something.
+		// ie var whatever button you just pressed, hide that section
+		
+		backNav();
+		lastClicked = "";
+	});
+};
+//Go Back in the Menu
+function backNav(){
+	if(lastClicked == 'backNav'){
+		//$(".navDepth3").empty();
+		$("."+lastClicked).parent().closest('ul').empty();
+	}else if(lastClicked == 'backMainMenu'){
+		$(".navDepth2,.navDepth3,.navDepth4").empty();		
+	}else{
+		//Do Nothing
+	}
+};
 //Level 1
 
 	//The Dumb Way
 	$(".teams").click(function(e){
 		
 		$( ".navDepth2" ).html( 
-			"<a href='' class='players'><li>Players</li></a><a href=''><li>Fixtures</li></a><a href=''><li>League Table</li></a>"
+			"<a href='#' ><li class='backMainMenu'>Back to Main Menu</li></a><a href='#' ><li class='players'>Players</li></a><a href='#'><li class='fixtures'>Fixtures</li></a><a href='#' ><li class='league-table'>League Table</li></a>"
 			);
-		$( ".navDepth3" ).html( "<a href=''><li>Teams</li></a>" );	
-	});
+		forwardNav();
+		backNav();
+	});	
 
 	$(".news").click(function(){
-		$( ".navDepth2" ).html( "<a href='#' class='news2'><li>News 2</li></a>" );
-		$( ".navDepth3" ).html( "<a href='#' class='news3'><li>News 3</li></a>" );	
+		//This can definitley be cut down
+		$( ".navDepth2" ).html("<a href='#'><li class='backMainMenu'>Back to Main Menu</li></a><a href='#'><li>Show All</li></a><a href='#'><li>First Team</li></a><a href='#'><li>Under 20's</li></a><a href='#'><li>Match Reports</li></a><a href='#'><li>Show All</li></a><a href='#'><li>Women's Team</li></a><a href='#'><li>Ticket's</li></a><a href='#'><li>Commercial</li></a><a href='#'><li class='newsOther'>Other<li></li></a>");
+		
+		
+		$( ".navDepth3" ).html("<a href='#'><li class='backNav'>Back to Teams</li><a href='#'><li>Academy</li><a href='#'><li>Publications</li>");	
+		
+		forwardNav();
+		backNav();
 	});
-
+	
+	var ticketsOutput = "";	
 	$(".tickets").click(function(){
-		//Nav Depth 1
-		//Nav Depth 2	
+		for(var i = 0; i < ticketsArray.length; i++){
+			ticketsOutput += "<a href='#'><li>" + ticketsArray[i] + "</li></a>";
+		}		
+		$(".navDepth2").html(backToMainBtn + ticketsOutput);
+		$(".navDepth2 a li").eq(7).addClass("matchdayTickets");		
+		forwardNav();		
+		backNav();		
+		ticketsOutput = "";
 	});
+	
+	
 	$(".hospitality").click(function(){
 		//Nav Depth 1
+		for(var i = 0; i < hospitalityArray.length; i++){
+			hospitalityOutput += "<a href='#'><li>" + hospitalityArray[i] + "</li></a>";
+		}
+		$(".navDepth2").html(backToMainBtn + hospitalityOutput);
+		$(".navDepth2 a li").eq(3).addClass("meetingsAndEvents");
 		
 		//Nav Depth 2
-	});
+		forwardNav();		
+		backNav();
+		hospitalityOutput = "";
+	});	
+	
 	$(".club").click(function(){
-		//Nav Depth 1
+		for(var i = 0; i < clubArray.length; i++){
+			clubOutput += "<a href='#'><li>" + clubArray[i] + "</li></a>";
+		}
+		$(".navDepth2").html(backToMainBtn + clubOutput);
+		$(".navDepth2 a li").eq(5).addClass("clubSoccerAcademy");
+		$(".navDepth2 a li").eq(6).addClass("clubSocialPolicies");
+		$(".navDepth2 a li").eq(7).addClass("clubCorporate");
+		$(".navDepth2 a li").eq(8).addClass("clubOther");
 		
 		//Nav Depth 2
+		forwardNav();		
+		backNav();
+		clubOutput = "";		
 	});
+	
+	
 	$(".shop").click(function(){
 		//Nav Depth 1		
 	});
