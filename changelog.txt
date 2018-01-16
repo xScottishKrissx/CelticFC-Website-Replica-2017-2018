@@ -8,11 +8,17 @@
 	**Fixed Nav bug where leaving column header at wrong place
 	  will cancel hover.
 		*Hard to replicate this	
-	**Made Sure the site is suitable for multiple devices
-	**Fixed Horizontal scrolling issue
 	**Made most read links clickable
+	
+	//Mobile Stuff
+	**Fixed Bug in Mobile Nav->More->Fans
 	**Made Footer into collapsible menu for smaller device size
+	**Made Sure the site is suitable for multiple devices
 
+14/1/18
+	-Finished structure and functionality of mobile Nav
+	-Made Mobile Nav Visualy similiar to the offical one
+	**Added basic visual distinction of what is a sub nav menu
 	
 13/1/18
 	-Still Working On Mobile Menu
@@ -24,6 +30,7 @@
 	-Further tweaks and fixes for responsive design
 	-Finished 2 of 4 media queries
 	-Started on Mobile Navigation
+	-Fixed Horizontal scrolling issue
 	
 	
 10/1/18

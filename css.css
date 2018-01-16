@@ -560,7 +560,7 @@ nav{margin-bottom:6%;}
 	top:0;
 	left:16rem;*/
 }
-.nav3{height:100px; background-color:blue;}
+
 
 
 /*******************************************************************************************
@@ -806,21 +806,113 @@ nav{margin-bottom:6%;}
 		
 		width: 17rem;
 		height: 100%;
-		background-color: red;
+		background-color: #017E44;
 		position:fixed;
 		
 		margin-left:-17rem;
 	
 	}
-	
-	.mobileHeader{
-		height: 140px;
-		width: 462px;
-		background-color: blue;
-		margin: 0 auto;
+	.mobileNavContent h1{
+		border-bottom:2px solid black;
+		color:#fc0;
+		font-family:BigNoodleTitling;
+		padding-left:0.5rem;
 	}
-		.showNav{
+		.triangle{
+			color: orange;				
+			float: right;
+			font-size:2.7rem;
+			height: 2.25rem;		
+			position: relative;
+			top:-1rem;
+			width: 1rem;		
+		}
+		.nav1{}
+		.nav2{
+			/*background-color:red;*/
+			position:absolute;
+			top:3.5rem;
+			left:17rem;
+			width:17rem;
+			z-index:2;
+		}
+		.nav3{
+			/*background-color:red;*/
+			position:absolute;
+			top:3.5rem;
+			left:17rem;
+			width:17rem;			
+			z-index:3;
+		}
+		.nav4{
+			/*background-color:red;*/
+			position:absolute;
+			top:3.5rem;
+			left:17rem;
+			width:17rem;
+			z-index:4;
+		}
+		
+		.navDepth1, .navDepth2, .navDepth3, .navDepth4{
+			list-style-type:none;			
+			margin-left:-2.5rem;
+			color:#fff;
+			font-family:BigNoodleTitling;
+			font-size:1.5rem;
+		}
+		
+		.navDepth1 a li, .navDepth2 a li, .navDepth3 a li, .navDepth4 a li{
 			
+			padding-left:0.5rem;
+			padding-bottom:0.1rem;
+			padding-top:0.1rem;
+			}
+	
+		.players, .fixtures, .league-table,.newsOther,.matchdayTickets,.meetingsAndEvents.clubSoccerAcademy, .clubSocialPolicies, .clubCorporate, .clubOther,.moreFans, .youngHoopsClub, .mobile, .supporters {color:#fc0;}
+	
+	.mobileHeaderWrapper{
+		width:28.9rem;
+		background-color:#2E8E4A;
+		height:99px;
+		margin:0 auto;
+	}
+		.mobileHeader{
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		}
+		
+		#hamburger{
+			position:relative;
+			left:1rem;
+			top:1rem;
+		}
+		#nbMobile{
+			position:relative;
+			left:6rem;
+			top:0.5rem;
+		}
+		#crestMobile{
+			position:relative;
+			top:0;
+			left:6.2rem;
+			width:3.5rem;
+			height:3.5rem;
+		}
+		#bannerMobile{
+			position:relative;
+			top:2.99rem;
+			left:-4rem;
+		}
+		#dafabetMobile{
+			position:relative;
+			right:-16.3rem;
+			top:-2.4rem;
+		}
+		#magnersMobile{
+			position:relative;
+			left:16.6rem;
+			top:-2.3rem;
 		}
 	
 	

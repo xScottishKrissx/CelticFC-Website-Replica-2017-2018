@@ -1,18 +1,18 @@
 
 <div class="mobileNavWrapper">
 	<div class="mobileNavContent">
-	
+		<h1>Celtic Fc</h1>
 		<div class="nav1">
 			<ul class="navDepth1">
-				<a href=""><li>Home</li></a>				
+				<a href="index.php"><li>Home</li></a>				
 				<a href="#"><li class="teams">Teams and Fixtures</li></a>
 				<a href="#"><li class="news">News</li></a>
 				<a href="#"><li class="tickets">Tickets</li></a>
 				<a href="#"><li>Celtic TV</li></a>
 				<a href="#"><li class="hospitality">Hospitality</li></a>
 				<a href="#"><li class="club">Club</li></a>
-				<a href="#"><li>Shop</li></a>
-				<a href="#"><li>More</li></a>
+				<a href="#"><li class="shop">Shop</li></a>
+				<a href="#"><li class="more">More</li></a>
 			</ul>
 		</div>
 		

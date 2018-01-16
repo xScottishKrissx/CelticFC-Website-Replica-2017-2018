@@ -27,8 +27,19 @@
 	
 	<?php include("mobileNav.php") ?>
 	
-	<div class="mobileHeader">
-		<div class="showNav">Show Nav</div>
+	<div class="mobileHeaderWrapper">
+		<div class="mobileHeader">
+			<div class="showNav">
+				<img id="hamburger" src="img/ui/mobileNavHighlighted.png"/>
+				<img id="nbMobile" src="img/ui/nbMobile.png"/>
+				
+				<img id="crestMobile" src="img/ui/crestMobile.png"/>		<img id="bannerMobile"  src="img/ui/bannerMobile.jpg"/>
+
+				<img id="dafabetMobile"  src="img/ui/dafabetMobile.png"/>
+				<img id="magnersMobile"  src="img/ui/magnersMobile.png"/>
+			
+			</div>
+		</div>
 	</div>
 	
 	<div id="header">
