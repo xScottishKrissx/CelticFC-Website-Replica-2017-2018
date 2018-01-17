@@ -203,7 +203,7 @@ function forwardNav(){
 		
 		if(lastClicked == 'players'){
 			
-			$( ".navDepth3" ).html( "<a href='#'><li class='backNav'>Back to Teams</li></a><a href='#'><li>First Team</li></a><a href='#'><li>Under 20's</li></a><a href='#'><li>Academy</li></a><a href='#'><li>Women's First Team</li></a><a href='#'><li>Women and Girls</li></a>" );
+			$( ".navDepth3" ).html( "<a href='#'><li class='backNav'>Back to Teams</li></a><a href='team.php'><li>First Team</li></a><a href='#'><li>Under 20's</li></a><a href='#'><li>Academy</li></a><a href='#'><li>Women's First Team</li></a><a href='#'><li>Women and Girls</li></a>" );
 			
 			
 			
@@ -351,7 +351,10 @@ function forwardNav(){
 		for(var i = 0; i < mobileArray.length; i++){
 			mobileOutput += "<a href='#'><li>" + mobileArray[i] + "</li></a>";
 		}
-			$( ".navDepth4" ).html(backNavBtn + mobileOutput);	
+			$( ".navDepth4" ).html(backNavBtn + mobileOutput);				
+			
+			$(".nav3").stop().animate({marginLeft:"-33.97rem"});	
+			$(".nav4").stop().animate({marginLeft:"-17rem"});
 			forwardNav();		
 			backNav();		
 			
@@ -360,7 +363,10 @@ function forwardNav(){
 		for(var i = 0; i < supportersArray.length; i++){
 			supportersOutput += "<a href='#'><li>" + supportersArray[i] + "</li></a>";
 		}
-			$( ".navDepth4" ).html(backNavBtn + supportersOutput);	
+			$( ".navDepth4" ).html(backNavBtn + supportersOutput);				
+			
+			$(".nav3").stop().animate({marginLeft:"-33.97rem"});	
+			$(".nav4").stop().animate({marginLeft:"-17rem"});
 			forwardNav();		
 			backNav();			
 		}		
@@ -413,6 +419,11 @@ function backNav(){
 			newsOutput += "<a href='#'><li>" + newsArray[i] + "</li></a>";
 		}		
 		$(".navDepth2").html(backToMainBtn + newsOutput);
+		
+		$(".navDepth2 a:nth-child(2)").html("<a href='standardnews.php'><li>Show All</li></a>").addClass("visualDistinction");
+		$(".navDepth2 a li").eq(2).css("display","none");
+		
+		
 		$(".navDepth2 a li").eq(8).addClass("newsOther");	
 		
 		$(".nav1").stop().animate({marginLeft:"-17rem"});
@@ -428,7 +439,12 @@ function backNav(){
 		for(var i = 0; i < ticketsArray.length; i++){
 			ticketsOutput += "<a href='#'><li>" + ticketsArray[i] + "</li></a>";
 		}		
-		$(".navDepth2").html(backToMainBtn + ticketsOutput);
+		$(".navDepth2").html(backToMainBtn + ticketsOutput);		
+		
+		$(".navDepth2 a:nth-child(2)").html("<a href='tickets.php'><li>Home Tickets</li></a>").addClass("visualDistinction");
+		
+		
+		
 		$(".navDepth2 a li").eq(7).addClass("matchdayTickets");		
 		
 		$(".nav1").stop().animate({marginLeft:"-17rem"});
@@ -463,6 +479,13 @@ function backNav(){
 			clubOutput += "<a href='#'><li>" + clubArray[i] + "</li></a>";
 		}
 		$(".navDepth2").html(backToMainBtn + clubOutput);
+		
+		$(".navDepth2 a:nth-child(2)").html("<a href='tickets.php'><li>Contact Information</li></a>").addClass("visualDistinction");
+		//$(".navDepth2 a li").eq(1).css("display","none");
+		
+		
+		
+		
 		$(".navDepth2 a li").eq(5).addClass("clubSoccerAcademy");
 		$(".navDepth2 a li").eq(6).addClass("clubSocialPolicies");
 		$(".navDepth2 a li").eq(7).addClass("clubCorporate");

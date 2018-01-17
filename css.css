@@ -154,8 +154,9 @@ nav{margin-bottom:6%;}
 .carousel-indicators{left:auto; bottom:0;margin-right:0;}
 .carousel-item img{width:100%;}
 
-.carousel-item div{position:absolute; bottom:0; left:0; font-size:1.5em; background: rgb(0, 0, 0); /* fallback color */ background: rgba(0, 0, 0, 0.7); width:100%;}
-	.carousel-item div h1{color:#FFCC00; padding-left:15px;}
+.slideCaption{position:absolute; bottom:0; left:0; font-size:1.5em; background: rgb(0, 0, 0); /* fallback color */ background: rgba(0, 0, 0, 0.7); max-width:1184px; width:100%;}
+	.carousel-item div h1{}
+	.slideCaption h1{color:#FFCC00; padding-left:15px;}
 	
 	
 	
@@ -551,7 +552,9 @@ nav{margin-bottom:6%;}
 	min-width:806px;
 	margin-bottom:50px;
 }
+.mobileHeaderWrapper{display:none;}
 .mobileNavWrapper{display:none;}
+#mobileFooterWrapper{display:none;}
 
 
 /*Mobile Nav */
@@ -575,7 +578,8 @@ nav{margin-bottom:6%;}
 /* First Size Change */
 @media screen and (max-width:1269px ) 
 {
-
+.mobileHeaderWrapper{display:none;}
+.mobileNavWrapper{display:none;}
 .headerBanner img{max-width:59rem; height:100%}
 
 
@@ -666,6 +670,7 @@ nav{margin-bottom:6%;}
 	.newsIndexDate{font-size:1rem; min-width:4rem;}
 
 #secondaryAdBar img{padding-right:0px; clear:both;}
+#footer, #secondaryAdBar{display:block;}
 .footerColumn{width:13%;} 
 }
 
@@ -689,7 +694,8 @@ nav{margin-bottom:6%;}
 /* Second Size Change */
 @media screen and (max-width:979px ) 
 {
-	
+	.mobileHeaderWrapper{display:none;}
+	.mobileNavWrapper{display:none;}
 	.headerBanner img{max-width:46rem;}
 	/*Bringin the sponsor bar tighter together */
 	.titleBarContent{width:740px;}
@@ -721,7 +727,7 @@ nav{margin-bottom:6%;}
 	
 	
 	
-	.content{width:737px;} 	
+	.content{width:737px; overflow:auto;} 	
 		#column1{width:60%} 
 			#matchdayCrests{margin-left:auto; margin-right:auto;}
 			#matchdayText{clear:none; float:left; width:11.4rem; margin-top:0.3rem;}
@@ -784,31 +790,63 @@ nav{margin-bottom:6%;}
 				max-height:113px;
 				max-width:195px;
 			}
-
+#footer{display:none;}
+#secondaryAdBar{display:none;}
 #secondaryAdBar{padding-left:8rem; padding-right:8rem;}
 #secondaryAdBar img{margin-top:0.8rem;}
+
+	#mobileFooterWrapper{ 
+		display:block;
+		background-color: #2e8e4a;
+		color:#fff;
+		clear:both;
+		font-family:Lato;
+		font-size:1rem;
+		height: auto;
+		margin: 0 auto;
+		padding-bottom:0.899rem;
+		width:737px; 
+	}
+	#mobileSponsorFooter{
+	background-color: #DDDDDD;
+	color: black;
+	font-family: BigNoodleTitling;
+	text-align: center;
+	font-size: 1.7rem;
+	}
 	
+	#mobileFooterWrapper img{width:9rem;}
+	#mobileFooterText{    
+		float: right;
+		padding-right: 2rem;
+	}
+		#mobileFooterText ul{
+			list-style-type:none;
+		}
+
+
 }
+
+
 
 
 
 
 /* Third Size Change */
 @media screen and (max-width:764px ) {
-	#header, #myCarousel, #footer,#secondaryAdBar, #column2{display:none;}
-	#column1{width:100%;}
+	#wrapper{overflow:auto;}
 	
-	
+	.mobileHeaderWrapper{display:block;}
+	.mobileNavWrapper{display:block;}
+	#header, #footer,#secondaryAdBar, #column2{display:none;}
+	#column1{width:100%;}	
 	
 	.mobileNavWrapper{
-		display:block;
-		
-		
+		display:block;		
 		width: 17rem;
 		height: 100%;
 		background-color: #017E44;
-		position:fixed;
-		
+		position:fixed;		
 		margin-left:-17rem;
 	
 	}
@@ -869,7 +907,7 @@ nav{margin-bottom:6%;}
 			}
 	
 		.players, .fixtures, .league-table,.newsOther,.matchdayTickets,.meetingsAndEvents.clubSoccerAcademy, .clubSocialPolicies, .clubCorporate, .clubOther,.moreFans, .youngHoopsClub, .mobile, .supporters {color:#fc0;}
-	
+	.visualDistinction{color:#fc0 !important;}
 	.mobileHeaderWrapper{
 		width:28.9rem;
 		background-color:#2E8E4A;
@@ -917,7 +955,11 @@ nav{margin-bottom:6%;}
 	
 	
 	.content{width:462px;} 
-
+	#mobileFooterWrapper{
+		width:462px;
+	}
+	
+.mobileNewsSearch{display:none;}
 }
 
 
@@ -925,7 +967,43 @@ nav{margin-bottom:6%;}
 
 
 /* Fourth Size Change */
-@media screen and (max-width:479px ) {.content{width:320px;} }
+@media screen and (max-width:479px ) {
+	
+	
+	.mobileHeaderWrapper{width:443px; }
+		#nbMobile{left:3rem;}
+		#crestMobile{left:4.2rem;}
+		#bannerMobile{left:4.4rem; top:0rem;}
+		#dafabetMobile{right:4.9rem;}
+		#magnersMobile{left:-4.4rem;}
+	
+	
+	.carousel-item div h1{font-size:1.1rem;}
+	.carousel-indicators{top:7rem;}
+	.content{width:320px;}
+		.homePageSectionHeaders{margin-left:auto; padding-left:1rem; width:auto;}
+	
+		#celticSocialMedia img{width:9rem;}
+	#mobileFooterWrapper{width:320px;}
+	
+	.newsSearchBox{height:9rem;}
+		
+		#search{width:18rem;}
+		.submitBtn{margin-left:0.8rem;}
+			.submitBtn input{width:18rem;}
+	.mostReadItem{width:auto;}
+	
+/*Team */
+	.playerItem{width:8rem;}
+	.playerName{font-size:1rem;}
+	.firstTeamImagesSection h2{width:249px;}
+	.goalkeepers{margin-left:auto;}
+	
+/*Player */
+.playerProfilePageContent{width:100%;}
+.playerStats{margin-left:1rem;}
+
+	}
 		
 		
 		

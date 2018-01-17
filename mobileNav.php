@@ -8,7 +8,7 @@
 				<a href="#"><li class="teams">Teams and Fixtures</li></a>
 				<a href="#"><li class="news">News</li></a>
 				<a href="#"><li class="tickets">Tickets</li></a>
-				<a href="#"><li>Celtic TV</li></a>
+
 				<a href="#"><li class="hospitality">Hospitality</li></a>
 				<a href="#"><li class="club">Club</li></a>
 				<a href="#"><li class="shop">Shop</li></a>

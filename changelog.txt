@@ -3,24 +3,36 @@
 	**Cleaned up code to be less repetitive
 	**Prettify URLs
 	**Seperated PlayerProfile PHP code from playerprofile.php
-	**Set the title of each page dynamically
-	**Made NAV bar more responsive
+	**Set the title of each page dynamically	
 	**Fixed Nav bug where leaving column header at wrong place
 	  will cancel hover.
 		*Hard to replicate this	
-	**Made most read links clickable
 	
 	//Mobile Stuff
 	**Fixed Bug in Mobile Nav->More->Fans
-	**Made Footer into collapsible menu for smaller device size
-	**Made Sure the site is suitable for multiple devices
 
-14/1/18
+		
+
+
+17/1/18
+	-Added the Carousel back to mobile	
+	-Added Hyperlinks to Mobile - 
+		**First Team
+		**News
+		**Tickets
+		**Club
+	-Tweaked pages for mobile
+	-Made most read links clickable
+	-Added working hyperlinks to footer
+	-Cleaned up Most Read Section in News
+	-Fixed Caption on Carousel
+	
+16/1/18
 	-Finished structure and functionality of mobile Nav
 	-Made Mobile Nav Visualy similiar to the offical one
 	**Added basic visual distinction of what is a sub nav menu
 	
-13/1/18
+15/1/18
 	-Still Working On Mobile Menu
 	
 12/1/18

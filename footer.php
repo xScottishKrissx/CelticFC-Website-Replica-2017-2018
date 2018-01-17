@@ -14,6 +14,24 @@
 	
 	</div>
 	
+	<div id="mobileFooterWrapper">
+	
+	<div id="mobileSponsorFooter"><a href="#">SPONSORS</a></div>
+	<a href="index.php"><img src="img/crest.png" /></a>
+		<div id="mobileFooterText">
+			<ul>
+				<a href="index.php"><li>Home</li></a>
+				<a href="team.php"><li>Team</li></a>
+				<a href="standardnews.php"><li>News</li></a>
+				<a href="tickets.php"><li>Tickets</li></a>
+				<a href="about.php"><li>Club</li></a>
+				<a href=""><li>Fans</li></a>
+			
+			</ul>
+		</div>
+	</div>
+	
+	
 	<div id="footer">
 		<a href="index.php"><img src="img/crest.png" /></a>
 		<div class="footerColumn">

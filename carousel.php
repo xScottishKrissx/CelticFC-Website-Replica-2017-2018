@@ -16,7 +16,7 @@
                 <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> 
               </div>-->
 			  
-			  <div><h1>CENTURY BHOY TIERNEY DELIGHTED WITH HIGLAND WIN</h1></div>
+			  <div class="slideCaption"><h1>CENTURY BHOY TIERNEY DELIGHTED WITH HIGLAND WIN</h1></div>
 			  
             </div>
           </div>
@@ -31,7 +31,7 @@
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
               </div>
 			  -->
-			  			  <div><h1>CENTURY BHOY TIERNEY DELIGHTED WITH HIGLAND WIN</h1></div>
+			  <div class="slideCaption"><h1>Slide 2</h1></div>
             </div>
           </div>
           <div class="carousel-item">
@@ -43,7 +43,7 @@
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
               </div>
 			  -->
-			  <div><h1>CENTURY BHOY TIERNEY DELIGHTED WITH HIGLAND WIN</h1></div>
+			  <div class="slideCaption"><h1>CENTURY BHOY TIERNEY DELIGHTED WITH HIGLAND WIN</h1></div>
             </div>
           </div>
         </div>
